@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#>Fondazione Bruno Kessler</a>.
+subtitle: <a href='https://www.fbk.eu/it/'>Fondazione Bruno Kessler</a>
 
 profile:
   align: right
@@ -23,7 +23,7 @@ announcements:
 
 latest_posts:
   enabled: false
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
+  scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
 
