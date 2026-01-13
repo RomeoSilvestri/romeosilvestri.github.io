@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.fbk.eu/it/'>Fondazione Bruno Kessler</a>
+subtitle: <a href='#>Fondazione Bruno Kessler</a>.
 
 profile:
   align: right
