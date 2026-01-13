@@ -8,7 +8,7 @@ profile:
   align: right
   image: personal_pic.jpeg
   image_circular: false # crops the image to make it circular
-  more_info: |
+  more_info: >
     <p>Machine Learning Engineer</p>
     <p>Fondazione Bruno Kessler</p>
     <p>Trento, Italy</p>
