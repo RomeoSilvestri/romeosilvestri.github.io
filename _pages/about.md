@@ -24,7 +24,7 @@ announcements:
 latest_posts:
   enabled: false
   scrollable: false # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  limit: # leave blank to include all the blog posts
 ---
 
 Hi — I’m Romeo. I’m a Machine Learning Engineer in the [OpenIot](https://openiot.fbk.eu/) research team at [FBK](https://www.fbk.eu/it/), although I tend to make a bit of a mess with labels: my day-to-day work often overlaps with what you would call data science. I have a solid background in statistics, and I’m increasingly diving into MLOps and production-grade machine learning.
