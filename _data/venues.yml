@@ -1,9 +1,9 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
+"CoDIT":
+  url: https://codit2025.org/
+
+"IEEE MetroAgriFor":
+  url: https://www.metroagrifor.org/maf2024/index
+
+"MDPI Sensors":
+  url: https://www.mdpi.com/journal/sensors
   color: "#00369f"
-
-"PhysRev":
-  url: https://journals.aps.org/
-
-"Vision":
-  color: "#009f36"
