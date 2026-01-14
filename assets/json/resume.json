@@ -24,13 +24,13 @@
   },
   "work": [
     {
-      "name": "Institute for Advanced Study, Princeton University",
-      "position": "Professor of Theoretical Physics",
+      "name": "Fondazione Bruno Kessler (FBK)",
+      "location": "Trento, Italy",
+      "position": "Machine Learning Engineer - Researcher",
       "url": "https://example.com",
-      "startDate": "1933-01-01",
-      "endDate": "1955-01-01",
-      "summary": "Teaching at Palmer Physical Laboratory (now 302 Frist Campus Center). While not a professor at Princeton, I associated with the physics professors and continued to give lectures on campus.",
-      "highlights": ["Relativity"]
+      "startDate": "2023-12-04",
+      "summary": "",
+      "highlights": ["Optimized ML pipelines in an advanced AI research and production environment using Python, LangGraph, Prefect, MLflow, and GitLab, while collaborating closely with experts to address agricultural challenges and the complex dynamics of the domain.", "Designed and tested a Decision Support System (DSS) for the IRRITRE project, integrating Internet of Things (IoT) and weather data with fuzzy logic to combine expert knowledge with field insights. Currently adopted by several agricultural consortia, the system has enabled estimated annual savings of €30.000 per consortium in water and electricity costs.", "Developed a multi-agent LLM-based chatbot for the European IT4LIA AI Factory project, leveraging pre-trained models to assist farmers. The system provides real-time, data-driven advice on irrigation, integrating legal guidelines and technical practices, with support for global (AquaCrop) and region-specific recommendation models.", "Built multi-day time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and validation techniques."]
     }
   ],
   "volunteer": [
@@ -56,15 +56,6 @@
       "endDate": "1905-01-01",
       "score": "10",
       "courses": ["Theory of Relativity"]
-    }
-  ],
-  "awards": [
-    {
-      "title": "Nobel Prize in Physics",
-      "date": "1921-11-01",
-      "awarder": "Royal Swedish Academy of Sciences",
-      "url": "https://www.nobelprize.org/prizes/physics/1921/einstein/biographical/",
-      "summary": "The Nobel Prizes are five separate prizes that, according to Alfred Nobel's will of 1895, are awarded to 'those who, during the preceding year, have conferred the greatest benefit to humankind.'"
     }
   ],
   "certificates": [
@@ -185,16 +176,6 @@
       "name": "Professor John Doe",
       "icon": "fa-solid fa-thumbtack",
       "reference": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam condimentum, diam quis convallis euismod, arcu mi ullamcorper lorem, a vestibulum nunc magna at sem. Sed in risus ac felis varius blandit. D"
-    }
-  ],
-  "projects": [
-    {
-      "name": "Quantum Computing",
-      "summary": "Quantum computing is the use of quantum-mechanical phenomena such as superposition and entanglement to perform computation. Computers that perform quantum computations are known as quantum computers.",
-      "highlights": ["Quantum Teleportation", "Quantum Cryptography"],
-      "startDate": "2018-01-01",
-      "endDate": "2018-01-01",
-      "url": "https://example.com"
     }
   ]
 }
