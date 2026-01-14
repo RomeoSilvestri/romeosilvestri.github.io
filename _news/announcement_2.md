@@ -1,33 +1,50 @@
 ---
 layout: post
-title: A long announcement with details
-date: 2015-11-07 16:11:00-0400
+title: Finishing my studies and some thoughts
+date: 2023-03-01
 inline: false
 related_posts: false
 ---
 
-Announcements and news can be much longer than just quick inline posts. In fact, they can have all the features available for the standard blog posts. See below.
+This is a slightly longer note than usual, but I wanted to write it down: I’ve finished my studies! 🔥  
+I earned a **Master’s degree in Statistics and Data Science** at Sapienza University of Rome, after completing a **Bachelor’s degree in Statistics** at the University of Padua.
+
+It hasn’t been a straight or “obvious” path, but looking back, it almost feels inevitable.
 
 ---
 
-Jean shorts raw denim Vice normcore, art party High Life PBR skateboard stumptown vinyl kitsch. Four loko meh 8-bit, tousled banh mi tilde forage Schlitz dreamcatcher twee 3 wolf moon. Chambray asymmetrical paleo salvia, sartorial umami four loko master cleanse drinking vinegar brunch. <a href="https://www.pinterest.com">Pinterest</a> DIY authentic Schlitz, hoodie Intelligentsia butcher trust fund brunch shabby chic Kickstarter forage flexitarian. Direct trade <a href="https://en.wikipedia.org/wiki/Cold-pressed_juice">cold-pressed</a> meggings stumptown plaid, pop-up taxidermy. Hoodie XOXO fingerstache scenester Echo Park. Plaid ugh Wes Anderson, freegan pug selvage fanny pack leggings pickled food truck DIY irony Banksy.
+I’ve always been fascinated by **numbers**, **data**, **formulas**, and generally by how we can try to describe the world in a rational way. Not so much to reach absolute truth, but to **better understand uncertainty**. Over time, statistics became exactly that for me: a tool (almost philosophical) to read reality.
 
-#### Hipster list
+During my final years of high school, I spent a huge amount of time thinking about what to do next. Perhaps obsessively, I started making lists of all possible degree programs. I checked each one, reading curricula, courses, career paths, and tried to imagine myself in each program.
 
-<ul>
-    <li>brunch</li>
-    <li>fixie</li>
-    <li>raybans</li>
-    <li>messenger bag</li>
-</ul>
+Slowly, I started eliminating options, until only a few remained. They were all very different:  
+- **Geography**  
+- **Philosophy**  
+- **Computer Science**
 
-Hoodie Thundercats retro, tote bag 8-bit Godard craft beer gastropub. Truffaut Tumblr taxidermy, raw denim Kickstarter sartorial dreamcatcher. Quinoa chambray slow-carb salvia readymade, bicycle rights 90's yr typewriter selfies letterpress cardigan vegan.
+And then there was one I had almost ignored at first: **Statistics**.
 
 ---
 
-Pug heirloom High Life vinyl swag, single-origin coffee four dollar toast taxidermy reprehenderit fap distillery master cleanse locavore. Est anim sapiente leggings Brooklyn ea. Thundercats locavore excepteur veniam eiusmod. Raw denim Truffaut Schlitz, migas sapiente Portland VHS twee Bushwick Marfa typewriter retro id keytar.
+At some point, I realized that statistics was the only field that could **connect all the others**.  
+It could interact with social sciences, economics, philosophy, computer science, and natural sciences. It was applicable to almost any domain of knowledge. It wasn’t just “doing calculations,” but building models, making hypotheses, testing them, making mistakes, correcting them, and reasoning about the world.
 
-> We do not grow absolutely, chronologically. We grow sometimes in one dimension, and not in another, unevenly. We grow partially. We are relative. We are mature in one realm, childish in another.
-> —Anais Nin
+So I chose **Padua**.
 
-Fap aliqua qui, scenester pug Echo Park polaroid irony shabby chic ex cardigan church-key Odd Future accusamus. Blog stumptown sartorial squid, gastropub duis aesthetic Truffaut vero. Pinterest tilde twee, odio mumblecore jean shorts lumbersexual.
+My years in Padua were very enjoyable and formative. The program is solid, rigorous, and highly theoretical. I built strong mathematical and statistical foundations and learned to reason in a structured and precise way. But over time, I felt the need for something different.
+
+I wanted **more practice**, more projects, more hands-on experience with real data.
+
+---
+
+That’s how I decided to move towards **Data Science** and to change cities.  
+**Rome** wasn’t just an academic choice; it was also personal: leaving my comfort zone, changing context, challenging myself.
+
+At Sapienza, I found an environment much more **focused on projects**, applying tools in practice, and working with complex, real-world data. I could combine the theory I had built over the years with practical applications, databases, programming, machine learning, exploratory analysis, and visualization.
+
+It wasn’t always easy, but it was exactly what I was looking for.
+
+---
+
+Now this chapter is closed.  
+What remains is the way of thinking about problems, the questions (probably even more than before), and most importantly, the desire to continue using data to understand more about the world.

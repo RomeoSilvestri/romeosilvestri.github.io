@@ -1,14 +1,19 @@
 name: Prettier code formatter
 
 on:
-  pull_request:
-    branches:
-      - master
-      - main
-  push:
-    branches:
-      - master
-      - main
+#  pull_request:
+#    branches:
+#      - master
+#      - main
+#  push:
+#    branches:
+#      - master
+#      - main
+  workflow_dispatch:
+    inputs:
+      url:
+        description: "URL to be checked (e.g.: blog/)"
+        required: false
 
 jobs:
   check:

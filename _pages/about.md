@@ -2,13 +2,13 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='https://www.fbk.eu/it/'>Fondazione Bruno Kessler</a>
+subtitle: <a href="https://www.fbk.eu/it/">Fondazione Bruno Kessler</a>
 
 profile:
   align: right
   image: personal_pic.jpg
   image_circular: false # crops the image to make it circular
-  more_info: > 
+  more_info: | 
     <p>Machine Learning Engineer</p>
     <p>Fondazione Bruno Kessler</p>
     <p>Trento, Italy</p>
