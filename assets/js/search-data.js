@@ -18,10 +18,10 @@ ninja.data = [{
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "This section showcases my GitHub repositories, where I share my projects and code experiments. The collection is still evolving, and I plan to review and reorganize the content in the future to improve structure and presentation.",
+          description: "A growing collection of your cool projects.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/repositories/";
+            window.location.href = "/projects/";
           },
         },{id: "nav-cv",
           title: "cv",
