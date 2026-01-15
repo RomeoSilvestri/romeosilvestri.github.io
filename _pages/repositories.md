@@ -1,7 +1,7 @@
 ---
 layout: page
 permalink: /repositories/
-title: projects
+title: repositories
 description: This section showcases my GitHub repositories, where I share my projects and code experiments.
   The collection is still evolving, and I plan to review and reorganize the content in the future to improve structure and presentation.
 nav: true

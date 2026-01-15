@@ -29,7 +29,7 @@
       "position": "Machine Learning Engineer - Researcher",
       "url": "https://www.fbk.eu/it/",
       "startDate": "2023-12-04",
-      "summary": "",
+      "summary": "FBK is a leading Italian research institute focused on science and technology innovation, with a strong emphasis on AI, data science, and their real-world applications across sectors including agriculture, health, and industry.",
       "highlights": ["Optimized ML pipelines in an advanced AI research and production environment using Python, LangGraph, Prefect, MLflow, and GitLab, while collaborating closely with experts to address agricultural challenges and the complex dynamics of the domain.", "Designed and tested a Decision Support System (DSS) for the IRRITRE project, integrating Internet of Things (IoT) and weather data with fuzzy logic to combine expert knowledge with field insights. Currently adopted by several agricultural consortia, the system has enabled estimated annual savings of €30.000 per consortium in water and electricity costs.", "Developed a multi-agent LLM-based chatbot for the European IT4LIA AI Factory project, leveraging pre-trained models to assist farmers. The system provides real-time, data-driven advice on irrigation, integrating legal guidelines and technical practices, with support for global (AquaCrop) and region-specific recommendation models.", "Built multi-day time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and validation techniques."]
     },
     {
@@ -39,7 +39,7 @@
       "url": "https://youbidata.com/",
       "startDate": "2023-10-01",
       "endDate": "2023-11-30",
-      "summary": "",
+      "summary": "Youbidata is a data-driven startup specializing in business intelligence and advanced analytics, helping companies make informed decisions through customized data solutions and strategic consulting.",
       "highlights": ["Utilized Python, PostgreSQL, and Power BI for analytics and developed a centralized dashboard for financial monitoring.", "Managed an end-to-end consulting project to optimize financial operations of a company and design meaningful KPIs."]
     },
     {
@@ -49,7 +49,7 @@
       "url": "https://www.istat.it/",
       "startDate": "2023-03-10",
       "endDate": "2023-08-31",
-      "summary": "",
+      "summary": "ISTAT is the official statistical agency of Italy, responsible for collecting, analyzing, and disseminating data to support government planning, public policy, and socio-economic research.",
       "highlights": ["Processed and analyzed national demographic data using Excel, R, and SQL to uncover socio-economic trends. The analysis outcomes were leveraged to create periodic reports, offering valuable insights to support strategic decisions.", "Evaluated the Austrian quality framework's suitability for the Italian Census, achieving statistically significant results."]
     },
     {
@@ -59,7 +59,6 @@
       "url": "https://www.dss.uniroma1.it/it",
       "startDate": "2020-09-01",
       "endDate": "2022-06-30",
-      "summary": "",
       "highlights": ["Supported the study of statistics-related subjects and managed IT services."]
     }
   ],
@@ -72,7 +71,21 @@
       "studyType": "Master of Science",
       "startDate": "2020-11-01",
       "endDate": "2023-03-01",
-      "score": "107/110"
+      "score": "107/110",
+      "courses": [
+        "Advanced Statistical Models",
+        "Big Data Analytics II",
+        "Causal Inference",
+        "Data Management for Data Science",
+        "Data Mining and Classification",
+        "Machine Learning",
+        "Management of Big Data",
+        "Sampling Techniques II",
+        "Optimization Methods II",
+        "Statistical Decision Theory (Bayesian Statistics)",
+        "Statistical Learning",
+        "Stochastic Processes"
+      ]
     },
     {
       "institution": "University of Padua",
@@ -82,7 +95,29 @@
       "studyType": "Bachelor of Science",
       "startDate": "2017-10-01",
       "endDate": "2020-11-01",
-      "score": "102/110"
+      "score": "102/110",
+      "courses": [
+        "Applied Statistical Models",
+        "Big Data Analytics",
+        "Computational Statistics",
+        "Data Structures",
+        "Databases",
+        "Demography",
+        "Linear Algebra",
+        "Mathematical Analysis I",
+        "Mathematical Analysis II",
+        "Multidimensional Statistics",
+        "Optimization Methods",
+        "Probability Theory",
+        "Programming",
+        "Sampling Techniques",
+        "Social Statistics",
+        "Statistical Models I",
+        "Statistical Models II",
+        "Statistics I",
+        "Statistics II",
+        "Time Series Analysis"
+      ]
     }
   ],
   "volunteer": [
@@ -144,8 +179,8 @@
         "NumPy",
         "Pandas",
         "PySpark",
-        "Scikit-learn",
         "PyTorch",
+        "Scikit-learn",
         "TensorFlow"
       ]
     },
@@ -154,17 +189,18 @@
       "level": "Advanced",
       "icon": "fa-solid fa-database",
       "keywords": [
-        "Docker",
         "Airflow",
-        "Prefect",
-        "Spark",
-        "MLflow",
-        "Git",
-        "Power BI",
+        "Docker",
+        "Data Version Control (DVC)",
         "Excel",
+        "Git",
+        "MLflow",
         "MongoDB",
         "MySQL",
-        "PostgreSQL"
+        "PostgreSQL",
+        "Power BI",
+        "Prefect",
+        "Spark"
       ]
     },
     {
@@ -172,21 +208,20 @@
       "level": "Advanced",
       "icon": "fa-solid fa-brain",
       "keywords": [
-        "Statistics",
         "A/B Testing",
-        "Data Mining",
-        "Data Visualization",
+        "Agent-Based Modeling",
         "Classification",
         "Clustering",
-        "Regression",
-        "Time Series",
-        "Machine Learning",
+        "Data Mining",
+        "Data Visualization",
         "Deep Learning",
-        "Neural Networks",
-        "Natural Language Processing (NLP)",
-        "Generative AI",
+        "Machine Learning",
         "Model Monitoring",
-        "Spatial Interpolation"
+        "Natural Language Processing (NLP)",
+        "Neural Networks",
+        "Regression",
+        "Spatial Interpolation",
+        "Time Series"
       ]
     }
   ],
@@ -208,7 +243,11 @@
       "icon": "fa-solid fa-chart-line",
       "keywords": [
         "Big Data Analysis",
+        "Data Quality Assessment",
+        "Decision Support Systems",
+        "Generative AI",
         "ML Ops",
+        "Predictive Analytics",
         "Probability Theory",
         "Statistical Inference"
       ]
@@ -218,6 +257,7 @@
       "icon": "fa-solid fa-heart",
       "keywords": [
         "Art",
+        "Bartending",
         "Chess",
         "Mixed Martial Arts",
         "Music",
