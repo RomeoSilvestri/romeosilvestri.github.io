@@ -10,7 +10,11 @@ display_categories: [work, fun]
 horizontal: false
 ---
 
-For all my repositories, check out my <a href="https://github.com/RomeoSilvestri?tab=repositories">GitHub repositories</a>.
+For all my public repositories, check out my <a href="https://github.com/RomeoSilvestri?tab=repositories">GitHub repositories</a>.
+<br><br>
+Please note that many of my professional projects were developed within companies and are therefore private and not publicly shareable due to confidentiality and legal constraints. For this reason, I have included anonymized descriptions of selected projects to illustrate the scope of my experience.
+<br><br>
+For further details or clarifications, feel free to contact me privately.
 
 <!-- pages/projects.md -->
 <div class="projects">
