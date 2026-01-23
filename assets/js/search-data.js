@@ -421,6 +421,11 @@ ninja.data = [{
           description: "Master&#39;s Thesis on comparative analysis between Spatial Econometrics and Machine Learning models for housing price prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/master_thesis/";
+            },},{id: "projects-nba-database-architecture",
+          title: 'NBA Database Architecture',
+          description: "Comprehensive database design project comparing Relational (SQL) and NoSQL paradigms for managing NBA sports analytics data.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/nba/";
             },},{
         id: 'social-cv',
         title: 'CV',
