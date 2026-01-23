@@ -121,5 +121,6 @@ Without an explicit data quality layer, erroneous signals were systematically am
     Comparison of suggested irrigation volume (purple) vs. actual applied water (blue). The algorithmic suggestions were inflated by sensor anomalies.
 </div>
 
+---
+**Note:** To maintain confidentiality, all company names, locations, dates, and specific proprietary values have been anonymized or modified. The analysis focuses on the technical methodology and challenges encountered during the project.
 
-Note: To maintain confidentiality, all company names, locations, dates, and specific proprietary values have been anonymized or modified. The analysis focuses on the technical methodology and challenges encountered during the project.

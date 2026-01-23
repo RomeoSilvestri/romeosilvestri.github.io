@@ -3,8 +3,9 @@ layout: page
 title: Real Estate Forecasting
 description: Master's Thesis on comparative analysis between Spatial Econometrics and Machine Learning models for housing price prediction.
 img: assets/img/master_thesis/cover.png
-importance: 3
+importance: 1
 category: university
+related_publications: false
 ---
 
 Real estate valuation is a complex task where location introduces strong spatial dependencies that standard models often fail to capture.
