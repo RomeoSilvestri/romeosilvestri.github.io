@@ -123,4 +123,3 @@ Without an explicit data quality layer, erroneous signals were systematically am
 
 ---
 **Note:** To maintain confidentiality, all company names, locations, dates, and specific proprietary values have been anonymized or modified. The analysis focuses on the technical methodology and challenges encountered during the project.
-
