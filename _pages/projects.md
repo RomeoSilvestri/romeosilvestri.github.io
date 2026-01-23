@@ -5,7 +5,7 @@ permalink: /projects/
 description: Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with.
   The collection is still evolving, and I plan to review and reorganize the content in the future.
 nav: true
-nav_order: 3
+nav_order: 2
 display_categories: [work, fun]
 horizontal: false
 ---

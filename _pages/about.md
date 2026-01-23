@@ -31,4 +31,4 @@ Hi — I’m Romeo. I’m a Machine Learning Engineer in the [OpenIot](https://o
 
 My activities range from designing and maintaining ML pipelines, working with AI agents, and building complex systems such as decision support tools and forecasting models, to more exploratory tasks. At the moment, my main application domain is agriculture, with a particular focus on water management in the Trentino region. Despite working on large-scale and automated systems, I still genuinely enjoy analyzing data “the old-fashioned way”, using statistical reasoning, data visualization, and hands-on exploration to really understand what the data is saying.
 
-I’m originally from Verona, currently live in Trento, and travel as much as possible. I hope to live and work abroad one day.
+I’m originally from Verona, currently live in Trento, and travel as much as possible. I’m open to living abroad for a period of my life.
