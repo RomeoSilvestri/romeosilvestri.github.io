@@ -2,7 +2,7 @@
 layout: page
 title: IoT Data Analysis
 description: Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.
-img: assets/img/ifarming_cover.png
+img: assets/img/ifarming/cover.png
 importance: 1
 category: work
 related_publications: false
@@ -72,7 +72,7 @@ Initial exploratory data analysis revealed several critical issues affecting the
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sensor_setup_schema.png" title="Sensor Installation Schema" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/ifarming/sensor_setup_schema.png" title="Sensor Installation Schema" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -90,10 +90,10 @@ The analysis pipeline was built using a modular approach:
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/sensor_raw_data.png" title="Raw Sensor Data" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/ifarming/sensor_raw_data.png" title="Raw Sensor Data" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/heatmap.png" title="Selected Analysis Window" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/ifarming/heatmap.png" title="Selected Analysis Window" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
@@ -114,7 +114,7 @@ Without an explicit data quality layer, erroneous signals were systematically am
 
 <div class="row justify-content-sm-center">
     <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/irrigation_comparison.png" title="Irrigation Suggestions vs Reality" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid path="assets/img/ifarming/irrigation_comparison.png" title="Irrigation Suggestions vs Reality" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
