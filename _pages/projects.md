@@ -3,18 +3,16 @@ layout: page
 title: projects
 permalink: /projects/
 description: Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with.
-  The collection is still evolving, and I plan to review and reorganize the content in the future to improve structure and presentation.
+  The collection is still evolving, and I plan to review and reorganize the content in the future.
 nav: true
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false
 ---
 
-For all my public repositories, check out my <a href="https://github.com/RomeoSilvestri?tab=repositories">GitHub repositories</a>.
-<br><br>
-Please note that many of my professional projects were developed within companies and are therefore private and not publicly shareable due to confidentiality and legal constraints. For this reason, I have included anonymized descriptions of selected projects to illustrate the scope of my experience.
-<br><br>
-For further details or clarifications, feel free to contact me privately.
+> Some projects shown here are based on professional work developed within companies.
+> To respect confidentiality agreements, descriptions and figures have been anonymized
+> and are intended to illustrate methodology and problem-solving approaches.
 
 <!-- pages/projects.md -->
 <div class="projects">
@@ -70,3 +68,11 @@ For further details or clarifications, feel free to contact me privately.
   {% endif %}
 {% endif %}
 </div>
+
+
+<br>
+Please note that many of my professional projects were developed within companies and are therefore private and not publicly shareable due to confidentiality and legal constraints. For this reason, I have included anonymized descriptions of selected projects to illustrate the scope of my experience.
+<br><br>
+For further details or clarifications, feel free to contact me privately.
+<br>
+For all my public repositories, check out my <a href="https://github.com/RomeoSilvestri?tab=repositories">GitHub repositories</a>.
