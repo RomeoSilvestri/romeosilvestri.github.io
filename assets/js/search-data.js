@@ -401,16 +401,16 @@ ninja.data = [{
             },},{id: "news-started-working-as-a-researcher-at-fbk",
           title: 'Started working as a Researcher at FBK.',
           description: "",
-          section: "News",},{id: "projects-project-5",
-          title: 'project 5',
-          description: "a project with a background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/5_project/";
-            },},{id: "projects-iot-data-analysis",
+          section: "News",},{id: "projects-iot-data-analysis",
           title: 'IoT Data Analysis',
           description: "Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ifarming/";
+            },},{id: "projects-real-estate-forecasting",
+          title: 'Real Estate Forecasting',
+          description: "Master&#39;s Thesis on comparative analysis between Spatial Econometrics and Machine Learning models for housing price prediction.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/master_thesis/";
             },},{
         id: 'social-cv',
         title: 'CV',
