@@ -401,11 +401,21 @@ ninja.data = [{
             },},{id: "news-started-working-as-a-researcher-at-fbk",
           title: 'Started working as a Researcher at FBK.',
           description: "",
-          section: "News",},{id: "projects-iot-data-analysis",
+          section: "News",},{id: "projects-migration-amp-demographics",
+          title: 'Migration &amp;amp; Demographics',
+          description: "Bachelor&#39;s Thesis analyzing the statistical impact of international migration flows on the demographic structure of Italian provinces.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/bachelor_thesis/";
+            },},{id: "projects-iot-data-analysis",
           title: 'IoT Data Analysis',
           description: "Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/ifarming/";
+            },},{id: "projects-census-quality-framework",
+          title: 'Census Quality Framework',
+          description: "Data quality assessment and weighting methodology for the Italian Integrated System of Registers (SIR) based on the Austrian Framework.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/istat/";
             },},{id: "projects-real-estate-forecasting",
           title: 'Real Estate Forecasting',
           description: "Master&#39;s Thesis on comparative analysis between Spatial Econometrics and Machine Learning models for housing price prediction.",
