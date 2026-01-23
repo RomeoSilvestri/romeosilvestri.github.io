@@ -9,19 +9,19 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
-          title: "publications",
-          description: "Welcome to my publications section! Here you’ll find a curated selection of my work, including journal articles and conference papers. While this list is still short and growing, it reflects some areas I am passionate about and the research I’ve been involved in.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/publications/";
-          },
-        },{id: "nav-projects",
+  },{id: "nav-projects",
           title: "projects",
           description: "Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with. The collection is still evolving, and I plan to review and reorganize the content in the future.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
+          },
+        },{id: "nav-publications",
+          title: "publications",
+          description: "Welcome to my publications section! Here you’ll find a curated selection of my work, including journal articles and conference papers. While this list is still short and growing, it reflects some areas I am passionate about and the research I’ve been involved in.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/publications/";
           },
         },{id: "nav-cv",
           title: "cv",
@@ -393,12 +393,7 @@ ninja.data = [{
             window.location.href = "/blog/2015/formatting-and-links/";
           
         },
-      },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather/";
-            },},{id: "news-finishing-my-studies-and-some-thoughts",
+      },{id: "news-finishing-my-studies-and-some-thoughts",
           title: 'Finishing my studies and some thoughts',
           description: "",
           section: "News",handler: () => {
