@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-publications",
           title: "publications",
-          description: "Welcome to my publications section! Here you’ll find a curated selection of my work, including journal articles and conference papers. While this list is still short and growing, it reflects some areas I am passionate about and the research I’ve been involved in. I invite you to explore and get a sense of the topics I focus on.",
+          description: "Welcome to my publications section! Here you’ll find a curated selection of my work, including journal articles and conference papers. While this list is still short and growing, it reflects some areas I am passionate about and the research I’ve been involved in.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
           },
         },{id: "nav-projects",
           title: "projects",
-          description: "Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with. The collection is still evolving, and I plan to review and reorganize the content in the future to improve structure and presentation.",
+          description: "Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with. The collection is still evolving, and I plan to review and reorganize the content in the future.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
@@ -406,16 +406,16 @@ ninja.data = [{
             },},{id: "news-started-working-as-a-researcher-at-fbk",
           title: 'Started working as a Researcher at FBK.',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
-          section: "Projects",handler: () => {
-              window.location.href = "/projects/1_project/";
-            },},{id: "projects-project-5",
+          section: "News",},{id: "projects-project-5",
           title: 'project 5',
           description: "a project with a background image",
           section: "Projects",handler: () => {
               window.location.href = "/projects/5_project/";
+            },},{id: "projects-iot-data-analysis",
+          title: 'IoT Data Analysis',
+          description: "Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/ifarming/";
             },},{
         id: 'social-cv',
         title: 'CV',
@@ -457,6 +457,13 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://orcid.org/0009-0008-3082-8227", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=w0nDyMYAAAAJ&hl", "_blank");
         },
       },{
       id: 'light-theme',
