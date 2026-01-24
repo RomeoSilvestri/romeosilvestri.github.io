@@ -3,7 +3,7 @@ layout: page
 title: BI Financial Dashboard
 description: End-to-end design and implementation of an interactive Power BI dashboard for executive financial reporting.
 img: assets/img/fin_dashboard/cover.png
-importance: 7
+importance: 8
 category: work
 related_publications: false
 ---

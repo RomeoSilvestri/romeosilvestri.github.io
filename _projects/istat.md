@@ -3,7 +3,7 @@ layout: page
 title: Census Quality Framework
 description: Data quality assessment and weighting methodology for the Italian Integrated System of Registers (SIR) based on the Austrian Framework.
 img: assets/img/istat/cover.png
-importance: 8
+importance: 9
 category: work
 related_publications: false
 ---
