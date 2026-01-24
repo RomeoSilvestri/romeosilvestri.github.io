@@ -406,6 +406,11 @@ ninja.data = [{
           description: "Bachelor&#39;s Thesis analyzing the statistical impact of international migration flows on the demographic structure of Italian provinces.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/bachelor_thesis/";
+            },},{id: "projects-bi-financial-dashboard",
+          title: 'BI Financial Dashboard',
+          description: "End-to-end design and implementation of an interactive Power BI dashboard for executive financial reporting.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dashboard/";
             },},{id: "projects-iot-data-analysis",
           title: 'IoT Data Analysis',
           description: "Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.",
@@ -426,6 +431,11 @@ ninja.data = [{
           description: "Comprehensive database design project comparing Relational (SQL) and NoSQL paradigms for managing NBA sports analytics data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nba/";
+            },},{id: "projects-time-series-forecasting",
+          title: 'Time Series Forecasting',
+          description: "Time-series forecasting project comparing Statistical Models (ARIMAX) and Machine Learning for soil water content prediction.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/soil_ml/";
             },},{
         id: 'social-cv',
         title: 'CV',
