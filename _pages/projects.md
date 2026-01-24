@@ -6,7 +6,7 @@ description: Here you’ll find some of the projects I’ve worked on — at wor
   The collection is still evolving, and I plan to review and reorganize the content in the future.
 nav: true
 nav_order: 2
-display_categories: [work, university, fun]
+display_categories: [work, university]
 horizontal: false
 ---
 

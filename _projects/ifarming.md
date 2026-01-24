@@ -3,7 +3,7 @@ layout: page
 title: IoT Data Analysis
 description: Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.
 img: assets/img/ifarming/cover.png
-importance: 1
+importance: 5
 category: work
 related_publications: false
 ---
