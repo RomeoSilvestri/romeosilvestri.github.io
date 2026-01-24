@@ -436,6 +436,11 @@ ninja.data = [{
           description: "Comprehensive database design project comparing Relational (SQL) and NoSQL paradigms for managing NBA sports analytics data.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/nba/";
+            },},{id: "projects-prisma-review-with-llm-amp-rag",
+          title: 'PRISMA Review with LLM &amp;amp; RAG',
+          description: "Research framework designed to automate and standardize the systematic literature review process according to PRISMA 2020.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/prisma/";
             },},{id: "projects-time-series-forecasting",
           title: 'Time Series Forecasting',
           description: "Time-series forecasting project comparing Statistical Models (ARIMAX) and Machine Learning for soil water content prediction.",
