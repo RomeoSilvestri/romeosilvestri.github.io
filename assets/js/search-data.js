@@ -411,6 +411,11 @@ ninja.data = [{
           description: "End-to-end design and implementation of an interactive Power BI dashboard for executive financial reporting.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/dashboard/";
+            },},{id: "projects-dss-for-irrigation",
+          title: 'DSS for Irrigation',
+          description: "Development and comparative evaluation of Fuzzy Logic (Mamdani) and Neuro-Adaptive (ANFIS) decision support systems for agriculture.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/dss_irrigation/";
             },},{id: "projects-iot-data-analysis",
           title: 'IoT Data Analysis',
           description: "Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.",
@@ -436,6 +441,11 @@ ninja.data = [{
           description: "Time-series forecasting project comparing Statistical Models (ARIMAX) and Machine Learning for soil water content prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/soil_ml/";
+            },},{id: "projects-spatial-interpolation",
+          title: 'Spatial Interpolation',
+          description: "Comparative analysis of geostatistical algorithms to transform sparse sensor data into continuous surface maps.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/sp_interp/";
             },},{
         id: 'social-cv',
         title: 'CV',
