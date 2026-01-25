@@ -397,9 +397,15 @@ ninja.data = [{
           title: 'Finishing my studies and some thoughts',
           description: "",
           section: "News",handler: () => {
-              window.location.href = "/news/announcement_2/";
+              window.location.href = "/news/announcement_1/";
             },},{id: "news-started-working-as-a-researcher-at-fbk",
-          title: 'Started working as a Researcher at FBK.',
+          title: 'Started working as a Researcher at FBK',
+          description: "",
+          section: "News",},{id: "news-published-my-first-conference-paper",
+          title: 'Published my first conference paper',
+          description: "",
+          section: "News",},{id: "news-published-my-first-journal-article",
+          title: 'Published my first journal article',
           description: "",
           section: "News",},{id: "projects-ai-agents-for-agritech",
           title: 'AI Agents for Agritech',
