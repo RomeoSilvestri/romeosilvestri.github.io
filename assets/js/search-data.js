@@ -401,7 +401,12 @@ ninja.data = [{
             },},{id: "news-started-working-as-a-researcher-at-fbk",
           title: 'Started working as a Researcher at FBK.',
           description: "",
-          section: "News",},{id: "projects-migration-amp-demographics",
+          section: "News",},{id: "projects-ai-agents-for-agritech",
+          title: 'AI Agents for Agritech',
+          description: "An advanced Multi-Agent Assistant leveraging AI agents, APIs, and RAG for precise agricultural insights.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/agrigraph/";
+            },},{id: "projects-migration-amp-demographics",
           title: 'Migration &amp;amp; Demographics',
           description: "Bachelor&#39;s Thesis analyzing the statistical impact of international migration flows on the demographic structure of Italian provinces.",
           section: "Projects",handler: () => {
@@ -446,6 +451,11 @@ ninja.data = [{
           description: "Time-series forecasting project comparing Statistical Models (ARIMAX) and Machine Learning for soil water content prediction.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/soil_ml/";
+            },},{id: "projects-full-mlops-workflow",
+          title: 'Full MLOps Workflow',
+          description: "Advanced data integration and predictive modeling for precision irrigation using physical and machine learning approaches.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/soilcast/";
             },},{id: "projects-spatial-interpolation",
           title: 'Spatial Interpolation',
           description: "Comparative analysis of geostatistical algorithms to transform sparse sensor data into continuous surface maps.",
