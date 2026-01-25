@@ -55,10 +55,10 @@ Efficient water management in agriculture requires balancing two conflicting goa
         <h5><i class="fas fa-code-branch"></i> Repository Structure</h5>
         <p>The project is modularized to separate logic from evaluation:</p>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item p-1"><small><code>data</code> Contains all datasets (CSV, XLSX) used for training and validation</small></li>
-          <li class="list-group-item p-1"><small><code>notebooks</code> Jupyter notebooks for research, demonstration, and evaluation</small></li>
-          <li class="list-group-item p-1"><small><code>scripts</code> Python scripts for training models and running the main application</small></li>
-          <li class="list-group-item p-1"><small><code>package</code> Core package containing the logic for different DSS approaches</small></li>
+          <li class="list-group-item p-1"><small><code>data</code> Contains all datasets (CSV, XLSX) used for training</small></li>
+          <li class="list-group-item p-1"><small><code>notebooks</code> For research, demonstration, and evaluation</small></li>
+          <li class="list-group-item p-1"><small><code>scripts</code> Used for training models and running the main application</small></li>
+          <li class="list-group-item p-1"><small><code>package</code> Core package containing the logic for different DSSs</small></li>
         </ul>
     </div>
 </div>
@@ -78,7 +78,7 @@ Two architectures were implemented and compared:
 * **Takagi-Sugeno ANFIS:** Uses a neural network structure to *learn* the optimal fuzzy rules and membership functions directly from field data, prioritizing adaptability.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/dss_irrigation/system_architecture.png" title="Dual IDSS Architecture" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -98,11 +98,20 @@ To ensure the systems were field-ready, a rigorous tuning and testing pipeline w
         {% include figure.liquid loading="eager" path="assets/img/dss_irrigation/membership_functions.png" title="Optimized Membership Functions" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/dss_irrigation/simulation_comparison.png" title="Simulation Time Series" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/dss_irrigation/membership_functions2.png" title="Optimized Membership Functions 2" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Left: Evolution of Fuzzy Membership functions before (dashed) and after (solid) ANFIS training. Right: Comparison of soil moisture trends under different strategies.
+    Evolution of Fuzzy Membership functions for input variables before (dashed) and after (solid) ANFIS training.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-12 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/dss_irrigation/simulation_comparison.png" title="Simulation Comparison" class="img-fluid rounded z-depth-1" %}
+    </div>
+</div>
+<div class="caption">
+    Comparison of soil moisture trends and irrigation suggestions under different strategies.
 </div>
 
 ### Results: The Trade-off

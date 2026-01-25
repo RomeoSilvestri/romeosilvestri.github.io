@@ -119,7 +119,7 @@ While Spatial Econometrics models (SEM) provided excellent theoretical insights 
 The hybrid model explained **89.9%** of the variance in housing prices, reducing the average error significantly compared to traditional methods.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm-9 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/master_thesis/model_comparison.png" title="RMSE Comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

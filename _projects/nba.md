@@ -75,18 +75,36 @@ The project followed a rigorous database engineering approach:
 2. **Logical Design (SQL)**: Mapped the ER model to a Relational Schema. This involved Normalization to eliminate redundancy and ensure data consistency in MySQL.
 3. **NoSQL Adaptation**: Transformed the rigid relational structure into a flexible Document-based model. This required strategic decisions on embedding versus referencing data to optimize for typical sports analytics queries.
 
-
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nba_db/relational_schema.png" title="Relational Schema" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/nba_db/relational_schema.png" 
+            title="Relational Schema" 
+            class="img-fluid rounded z-depth-1" 
+        %}
     </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/nba_db/mongodb_structure.png" title="MongoDB JSON Structure" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-8 mt-3 mt-md-0">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/nba_db/mongodb_structure.png" 
+            title="MongoDB JSON Structure" 
+            class="img-fluid rounded z-depth-1" 
+        %}
+    </div>
+</div>
+
+<div class="caption">
+    Comparison of paradigms for an entity: The structured Relational Schema (left) vs. the denormalized JSON structure used in MongoDB (right).
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-11 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/nba_db/query_comparison.png" title="Query Complexity Comparison" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Comparison of paradigms for an entity: The structured Relational Schema (left) vs. the denormalized JSON structure used in MongoDB (right).
+    Visual comparison of an SQL query versus the equivalent aggregation pipeline in MongoDB.
 </div>
 
 ### Results: SQL vs. NoSQL Performance
@@ -98,10 +116,10 @@ The final phase involved stress-testing both systems with complex analytical que
 * **Query Performance**: MongoDB outperformed MySQL in fetching full game details. By embedding player statistics within the Game documents, MongoDB required a single read operation, whereas MySQL required complex JOIN operations across multiple tables.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/nba_db/query_comparison.png" title="Query Complexity Comparison" class="img-fluid rounded z-depth-1" %}
+    <div class="col-sm-12 mt-3 mt-md-0">
+        {% include figure.liquid path="assets/img/nba_db/results.png" title="Query Results" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
-    Visual comparison of a complex SQL query versus the equivalent aggregation pipeline in MongoDB.
+    Final results of the query evaluation.
 </div>

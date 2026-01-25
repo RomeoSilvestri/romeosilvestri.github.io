@@ -86,16 +86,31 @@ Following **Kimball methodology**, the solution included:
 3. **DAX Engineering:** Calculation groups enabled dynamic “Month-to-Date”, “Year-to-Date”, and “Same-Period-Last-Year” views.  
 4. **UI/UX Design:** Grid-based layout with sidebar navigation for clarity and dark mode aesthetics.
 
-<div class="row">
-<div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid loading="eager" path="assets/img/fin_dashboard/wireframe_concept.png" title="Dashboard UI Wireframe" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-center">
+    <div class="col-9 mt-3">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/fin_dashboard/wireframe_concept.png" 
+            title="Dashboard UI Wireframe" 
+            class="img-fluid rounded z-depth-1" 
+        %}
+    </div>
 </div>
-<div class="col-sm mt-3 mt-md-0">
-{% include figure.liquid loading="eager" path="assets/img/fin_dashboard/dax_logic.png" title="DAX Measure Logic" class="img-fluid rounded z-depth-1" %}
+
+<div class="row justify-content-center">
+    <div class="col-9 mt-3">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/fin_dashboard/dax_logic.png" 
+            title="DAX Measure Logic" 
+            class="img-fluid rounded z-depth-1" 
+        %}
+    </div>
 </div>
-</div>
+
 <div class="caption">
-Left: An example of a dashboard tab. Right: Snippet of the DAX logic used for dynamic time intelligence.
+    Top: An example of a dashboard tab.  
+    Bottom: Snippet of the DAX logic used for dynamic time intelligence.
 </div>
 
 ### Results: actionable insights

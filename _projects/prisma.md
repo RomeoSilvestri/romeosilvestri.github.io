@@ -51,10 +51,11 @@ Automating PRISMA is an innovative framework aimed at simplifying and accelerati
         <h5><i class="fas fa-code-branch"></i> Repository Structure</h5>
         <p>The organization follows the PRISMA workflow phases:</p>
         <ul class="list-group list-group-flush">
-          <li class="list-group-item p-1"><small><code>01_identification_screening</code> Title and abstract filtering</small></li>
-          <li class="list-group-item p-1"><small><code>02_screening_evaluation</code> Metadata harmonization and validation</small></li>
+          <li class="list-group-item p-1"><small><code>data</code> Bibliographic input data and intermediate files for all phases</small></li>
+          <li class="list-group-item p-1"><small><code>01_identification_screening</code> Identification and screening phases</small></li>
+          <li class="list-group-item p-1"><small><code>02_screening_evaluation</code> Comparison of results with the reference study for the first two PRISMA phases</small></li>
           <li class="list-group-item p-1"><small><code>03_eligibility_RAG</code> Full-text analysis via RAG</small></li>
-          <li class="list-group-item p-1"><small><code>replicated_study_workflow</code> Complete end-to-end workflow</small></li>
+          <li class="list-group-item p-1"><small><code>replicated_study_workflow</code> Complete end-to-end workflow for replicating the reference study</small></li>
         </ul>
     </div>
 </div>

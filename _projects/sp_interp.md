@@ -51,7 +51,7 @@ In environmental monitoring, data is often limited to specific point locations. 
           <li class="list-group-item p-1"><small><code>data</code> Raw Shapefiles & CSVs</small></li>
           <li class="list-group-item p-1"><small><code>images</code> Stores generated plots and visualizations</small></li>
           <li class="list-group-item p-1"><small><code>notebooks</code> Exploratory data analysis and statistical testing</small></li>
-          <li class="list-group-item p-1"><small><code>scripts</code> Executable Python scripts for generating comparisons and descriptive statistics</small></li>
+          <li class="list-group-item p-1"><small><code>scripts</code> For generating comparisons and descriptive statistics</small></li>
           <li class="list-group-item p-1"><small><code>package</code> Core package containing the implementation of interpolation algorithms</small></li>
         </ul>
     </div>
@@ -68,7 +68,7 @@ The input dataset consisted of scattered weather stations across a region in Nor
 * **Output:** A continuous raster grid (heatmap) covering the entire area.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm-9 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/sp_interp/input_data_viz.png" title="Input Data Distribution" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

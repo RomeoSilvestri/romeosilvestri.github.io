@@ -113,7 +113,7 @@ The analysis demonstrated that the algorithm was reacting primarily to sensor no
 Without an explicit data quality layer, erroneous signals were systematically amplified into incorrect decision-making.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm-12 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/ifarming/irrigation_comparison.png" title="Irrigation Suggestions vs Reality" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>

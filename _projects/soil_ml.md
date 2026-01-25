@@ -72,7 +72,7 @@ Soil moisture data presents a dual challenge:
 Standard ML models struggle with raw temporal dependencies unless engineered lag features are included. **ARIMAX** explicitly models the autoregressive structure, while **Panel Data models** capture multi-site dependencies and site-specific heterogeneity.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
+    <div class="col-sm-10 mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/soil_ml/decomposition.png" title="Time Series Decomposition" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
@@ -89,16 +89,31 @@ The workflow was designed to rigorously test the statistical properties of the d
 3.  **ARIMAX Modeling:** Implemented the model using `statsmodels`. Rainfall and Temperature were fed as exogenous variables to help the model react to weather events.
 4.  **ML Benchmarking:** Trained Random Forest and SVR models. To make the comparison fair, the ML dataset was augmented with "Lag Features" (shifting the target column) to simulate the memory effect inherent in ARIMA.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/soil_ml/acf_pacf.png" title="ACF and PACF Plots" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/soil_ml/arimax_equation.png" title="ARIMAX Concept" class="img-fluid rounded z-depth-1" %}
+<div class="row justify-content-sm-center">
+    <div class="col-sm-10 mt-3">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/soil_ml/acf_pacf.png" 
+            title="ACF and PACF Plots" 
+            class="img-fluid rounded z-depth-1" 
+        %}
     </div>
 </div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-10 mt-3">
+        {% include figure.liquid 
+            loading="eager" 
+            path="assets/img/soil_ml/arimax_equation.png" 
+            title="ARIMAX Concept" 
+            class="img-fluid rounded z-depth-1" 
+        %}
+    </div>
+</div>
+
 <div class="caption">
-    Left: Correlograms used to identify the order of the AR and MA terms. Right: Conceptual structure of the ARIMAX model.
+    Top: Correlograms used to identify the order of the AR and MA terms.  
+    Bottom: Conceptual structure of the ARIMAX model.
 </div>
 
 ### Results: Interpretability vs. Precision
@@ -112,7 +127,7 @@ The analysis provided clear distinctions between the two approaches:
 The project concluded that while ML offers higher raw accuracy, ARIMAX and Panel Data models provide a more robust framework for understanding the *causal* relationship between weather inputs and soil dynamics.
 
 <div class="row justify-content-sm-center">
-    <div class="col-sm-10 mt-3 mt-md-0">
+    <div class="col-sm-11 mt-3 mt-md-0">
         {% include figure.liquid path="assets/img/soil_ml/forecast_comparison.png" title="ARIMAX vs ML Forecast" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
