@@ -472,7 +472,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/RomeoSilvestri_Resume_2025.pdf", "_blank");
+          window.open("/assets/pdf/RomeoSilvestri_Resume_2026.pdf", "_blank");
         },
       },{
         id: 'social-email',
