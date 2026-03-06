@@ -6,7 +6,7 @@
     "email": "silveromeo98@gmail.com",
     "phone": "",
     "url": "https://romeosilvestri.github.io/",
-    "summary": "A passionate researcher in the field of Machine Learning and Artificial Intelligence, with a strong background in computer science and data analysis.",
+    "summary": "A passionate researcher in the field of Machine Learning and Artificial Intelligence, with a strong background in statistics and data science.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -30,7 +30,7 @@
       "url": "https://www.fbk.eu/it/",
       "startDate": "2023-12-04",
       "summary": "FBK is a leading Italian research institute focused on science and technology innovation, with a strong emphasis on AI, data science, and their real-world applications across sectors including agriculture, health, and industry.",
-      "highlights": ["Optimized ML pipelines in an advanced AI research and production environment using Python, LangGraph, Prefect, MLflow, and GitLab, while collaborating closely with experts to address agricultural challenges and the complex dynamics of the domain.", "Designed and tested a Decision Support System (DSS) for the IRRITRE project, integrating Internet of Things (IoT) and weather data with fuzzy logic to combine expert knowledge with field insights. Currently adopted by several agricultural consortia, the system has enabled estimated annual savings of €30.000 per consortium in water and electricity costs.", "Developed a multi-agent LLM-based chatbot for the European IT4LIA AI Factory project, leveraging pre-trained models to assist farmers. The system provides real-time, data-driven advice on irrigation, integrating legal guidelines and technical practices, with support for global (AquaCrop) and region-specific recommendation models.", "Built multi-day time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and validation techniques."]
+      "highlights": ["•\tOptimized ML pipelines and provided APIs in a research and production environment using Python, FastAPI, GitLab, LangGraph, and MLflow, while collaborating closely with domain experts to address complex problems and streamline processes.", "Designed, tested, and deployed a Decision Support System (DSS) for irrigation, integrating heterogeneous data sources, including IoT sensors and weather data, reducing operational costs by around 50% across several companies.", "Developed a Deep Reinforcement Learning agent with PPO optimization, leveraging a digital twin environment using a surrogate and a physical model for simulation and policy training, with synthetic weather data generation via KNN bootstrap.", "Developed a multi-agent LLM-based chatbot for the European AI Factories project, leveraging pre-trained models and Retrieval-Augmented Generation (RAG) to support decision-making. The system provides real-time, data-driven advice on agriculture, integrating legal guidelines and technical best practices, with support for global and region-specific recommendation models.", "Built state-of-the-art time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and rigorous validation."]
     },
     {
       "name": "Youbidata",
@@ -174,9 +174,11 @@
       "level": "Master",
       "icon": "fa-solid fa-cubes",
       "keywords": [
-        "Hugging Face",
+        "FastAPI",
+        "Gymnasium",
         "LangChain",
         "NumPy",
+        "Optuna",
         "Pandas",
         "PySpark",
         "PyTorch",
@@ -220,8 +222,9 @@
         "Natural Language Processing (NLP)",
         "Neural Networks",
         "Regression",
+        "Reinforcement Learning",
         "Spatial Interpolation",
-        "Time Series"
+        "Time Series Forecasting"
       ]
     }
   ],
