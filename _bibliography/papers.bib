@@ -1,40 +1,13 @@
 ---
 ---
 
-@unpublished{silvestri2025rl,
-  title     = {Deep Reinforcement Learning for Irrigation Optimization Using a Digital Twin of Crop-Soil Dynamics},
-  author    = {Silvestri, Romeo and Vecchio, Massimo and Pincheira, Miguel and Antonelli, Fabio},
-  year      = {2025},
-
-  abbr      = {IEEE MetroInd (under review)},
-  abstract  = {Irrigation management is a key challenge in modern agriculture, where water scarcity and
-               climate variability demand smarter, data-driven decision systems. We propose a deep
-               reinforcement learning (DRL) framework for irrigation scheduling based on a digital twin
-               of crop-soil dynamics. Synthetic multiyear weather scenarios are generated from historical
-               climate data via a KNN bootstrap resampling procedure, ensuring broad climatic coverage
-               across training conditions. Daily soil water tension is estimated from meteorological inputs
-               and field measurements using a linear autoregressive model with exogenous variables (ARX),
-               while AquaCrop handles crop biomass simulation under varying irrigation events. A DRL agent
-               is then trained within this simulated environment using the Proximal Policy Optimization
-               (PPO) algorithm to learn an irrigation policy balancing crop productivity against water
-               consumption. The framework is assessed on field data collected from a vineyard in the
-               Val d'Adige region of Trentino, Italy, over the 2023 and 2024 irrigation seasons.
-               Preliminary results show that the synthetic weather data reproduces the statistical
-               properties of the historical climate record, the ARX soil tension model achieves an R²
-               of 0.956 on held-out test data, and the DRL component provides initial evidence that
-               irrigation strategies broadly consistent with validated fuzzy decision support systems
-               can be learned without requiring expert-defined rules.},
-  bibtex_show = {true},
-  preview={rl.png}
-}
-
 @misc{silvestri2026rag,
   title     = {A Generalizable Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews},
   author    = {Silvestri, Romeo and Vecchio, Massimo and Pincheira, Miguel and Antonelli, Fabio},
   year      = {2026},
-  note      = {Preprint available at SSRN. Under review at Expert Systems with Applications (Elsevier)},
+  note      = {Preprint available at ResearchGate and SSRN. Currently under review.},
 
-  abbr      = {ESWA (under review)},
+  abbr      = {ESWA (submitted)},
   abstract  = {Systematic reviews and meta-analyses are essential for advancing scientific research,
                but they are time-consuming, labor-intensive, and prone to human error during literature
                selection and data extraction. This paper proposes a framework that integrates Large
@@ -60,6 +33,35 @@
   html      = {https://ssrn.com/abstract=6416050},
   pdf       = {A Generalizable Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews (PREVIEW).pdf},
   preview   = {prisma.png}
+}
+
+@unpublished{silvestri2025rl,
+  title     = {Deep Reinforcement Learning for Irrigation Optimization Using a Digital Twin of Crop-Soil Dynamics},
+  author    = {Silvestri, Romeo and Vecchio, Massimo and Pincheira, Miguel and Antonelli, Fabio},
+  year      = {2026},
+  note      = {Extended abstract available and accepted for publication.},
+
+  abbr      = {IEEE MetroInd},
+  abstract  = {Irrigation management is a key challenge in modern agriculture, where water scarcity and
+               climate variability demand smarter, data-driven decision systems. We propose a deep
+               reinforcement learning (DRL) framework for irrigation scheduling based on a digital twin
+               of crop-soil dynamics. Synthetic multiyear weather scenarios are generated from historical
+               climate data via a KNN bootstrap resampling procedure, ensuring broad climatic coverage
+               across training conditions. Daily soil water tension is estimated from meteorological inputs
+               and field measurements using a linear autoregressive model with exogenous variables (ARX),
+               while AquaCrop handles crop biomass simulation under varying irrigation events. A DRL agent
+               is then trained within this simulated environment using the Proximal Policy Optimization
+               (PPO) algorithm to learn an irrigation policy balancing crop productivity against water
+               consumption. The framework is assessed on field data collected from a vineyard in the
+               Val d'Adige region of Trentino, Italy, over the 2023 and 2024 irrigation seasons.
+               Preliminary results show that the synthetic weather data reproduces the statistical
+               properties of the historical climate record, the ARX soil tension model achieves an R²
+               of 0.956 on held-out test data, and the DRL component provides initial evidence that
+               irrigation strategies broadly consistent with validated fuzzy decision support systems
+               can be learned without requiring expert-defined rules.},
+  bibtex_show = {true},
+  pdf       = {Deep Reinforcement Learning for Irrigation Optimization Using a Digital Twin of Crop-Soil Dynamics.pdf},
+  preview={rl.png}
 }
 
 @article{silvestri2025smart,
