@@ -2,44 +2,43 @@
 ---
 
 @misc{silvestri2026rag,
-  title     = {A Generalizable Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews},
-  author    = {Silvestri, Romeo and Vecchio, Massimo and Pincheira, Miguel and Antonelli, Fabio},
+  title     = {A Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews},
+  author    = {Silvestri, Romeo and Pincheira, Miguel and Vecchio, Massimo and Antonelli, Fabio},
   year      = {2026},
-  note      = {Preprint available at ResearchGate and SSRN. Currently under review.},
+  note      = {Preprint available at ResearchGate and SSRN. Currently under review in Neural Computing and Applications (NCAA).},
 
-  abbr      = {ESWA (submitted)},
+  abbr      = {NCAA (submitted)},
   abstract  = {Systematic reviews and meta-analyses are essential for advancing scientific research,
                but they are time-consuming, labor-intensive, and prone to human error during literature
                selection and data extraction. This paper proposes a framework that integrates Large
                Language Models (LLMs) and retrieval-augmented generation (RAG) into the PRISMA 2020
-               workflow to automate and standardize key review tasks, enhancing transparency,
-               completeness, and up-to-date reporting. The framework uses structured query templates
-               to ensure reproducible bibliographic searches, an LLM-driven pipeline for title and
-               abstract screening, and a RAG-based full-text assessment in which articles are
-               segmented, encoded as dense vector embeddings, and retrieved for generative evaluation
-               against inclusion and exclusion criteria. Beyond selecting relevant papers, the
-               framework also extracts specific information from documents, such as application
-               details or datasets, and harmonizes it into a standardized metadata schema. Automated
-               tasks are supported by predefined fallback strategies, with human oversight reserved
-               for borderline decisions. To evaluate our proposal, we performed an experimental
-               validation using an existing systematic literature review as a reference. The framework
-               achieved an article detection rate of 72.34\% and an extraction accuracy of 85.11\%
-               for domain-specific information. Furthermore, the framework identified 25 additional
-               data sources not reported in the original review. These results demonstrate that the
-               proposed framework can effectively assist in both identifying relevant studies and
-               extracting additional information, substantially accelerating systematic reviews while
-               maintaining alignment with the PRISMA 2020 guidelines.},
+               workflow to assist and standardize key review tasks. The framework uses structured query
+               templates to ensure reproducible bibliographic searches, an LLM-driven pipeline for
+               title and abstract screening, and a RAG-based full-text eligibility assessment. Both
+               automated stages rely on structured prompt templates that encode inclusion and exclusion
+               criteria as machine-interpretable instructions. Beyond selecting relevant papers, it extracts
+               specific information from documents, such as application details or datasets, and harmonizes it
+               into a standardized metadata schema. To evaluate our proposal, we performed an experimental
+               validation using an existing systematic literature review on Human Action Quality Assessment (AQA)
+               as a reference. The framework achieved an extraction accuracy of 85.11\% for domain-specific datasets
+               and identified 25 additional data sources not reported in the original review.
+               The article detection rate of 72.34\% was primarily attributable to the dataset-oriented query
+               design adopted in the identification phase, while the LLM-based screening and RAG-based eligibility
+               stages retained 97.14\% of the reference studies that entered the automated pipeline. These results
+               suggest that the framework can effectively assist in identifying relevant studies and extracting
+               information while maintaining alignment with PRISMA 2020 guidelines. The proposed approach is
+               structured to facilitate adaptation to other research areas by declaring new query and promtp templates.},
   bibtex_show = {true},
   html      = {https://ssrn.com/abstract=6416050},
-  pdf       = {A Generalizable Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews (PREVIEW).pdf},
+  pdf       = {A Generalizable Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews.pdf},
   preview   = {prisma.png}
 }
 
 @unpublished{silvestri2025rl,
-  title     = {Deep Reinforcement Learning for Irrigation Optimization Using a Digital Twin of Crop-Soil Dynamics},
-  author    = {Silvestri, Romeo and Vecchio, Massimo and Pincheira, Miguel and Antonelli, Fabio},
+  title     = {Deep Reinforcement Learning for Irrigation Optimization Based on Crop-Soil Dynamics},
+  author    = {Silvestri, Romeo and Antonini, Mattia and Vecchio, Massimo and Antonelli, Fabio},
   year      = {2026},
-  note      = {Extended abstract available and accepted for publication.},
+  note      = {Paper accepted for publication and soon to appear online.},
 
   abbr      = {IEEE MetroInd},
   abstract  = {Irrigation management is a key challenge in modern agriculture, where water scarcity and
@@ -60,7 +59,7 @@
                irrigation strategies broadly consistent with validated fuzzy decision support systems
                can be learned without requiring expert-defined rules.},
   bibtex_show = {true},
-  pdf       = {Deep Reinforcement Learning for Irrigation Optimization Using a Digital Twin of Crop-Soil Dynamics.pdf},
+  pdf       = {Deep Reinforcement Learning for Irrigation Optimization Based on Crop-Soil Dynamics.pdf},
   preview={rl.png}
 }
 
