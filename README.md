@@ -12,3 +12,11 @@ Source for [romeosilvestri.github.io](https://romeosilvestri.github.io), built w
 - `assets/`: public images, documents, fonts, styles and scripts
 
 The repository keeps only the source needed to publish the website plus the deployment workflow and build dependencies.
+
+## Preview locale con Docker
+
+1. Avvia Docker Desktop.
+2. Dalla cartella della repository, esegui `docker compose up --build`.
+3. Apri `http://127.0.0.1:4000/` nel browser.
+
+Per fermare la preview, premi `Ctrl+C`. Alle esecuzioni successive basta `docker compose up`.
