@@ -452,6 +452,11 @@ ninja.data = [{
           description: "Research framework designed to automate and standardize the systematic literature review process according to PRISMA 2020.",
           section: "Projects",handler: () => {
               window.location.href = "/projects/prisma/";
+            },},{id: "projects-deep-reinforcement-learning",
+          title: 'Deep Reinforcement Learning',
+          description: "A PPO agent trained in a crop-soil digital twin to learn weather-aware irrigation policies from limited field data.",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/reinforcement_learning/";
             },},{id: "projects-time-series-forecasting",
           title: 'Time Series Forecasting',
           description: "Time-series forecasting project comparing Statistical Models (ARIMAX) and Machine Learning for soil water content prediction.",
