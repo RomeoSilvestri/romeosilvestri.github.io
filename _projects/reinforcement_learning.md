@@ -19,10 +19,10 @@ The framework was developed from field observations collected in the Val d'Adige
 4. Evaluate water use, soil tension regulation, and crop productivity against observed field practice.
 
 **My Role**
-- Designed the end-to-end DRL framework and crop-soil simulation environment.
+- Designed the end-to-end DRL framework and implemented the custom environment with **Gymnasium**.
 - Defined the state, continuous action space, and multi-objective reward function.
 - Developed the synthetic weather generation and soil tension modeling pipelines.
-- Implemented the two-stage PPO training strategy and evaluated the learned policy.
+- Implemented the two-stage PPO training pipeline with **Stable-Baselines3** and evaluated the learned policy.
 
 <br>
 
@@ -36,7 +36,11 @@ The framework was developed from field observations collected in the Val d'Adige
                     <td>Python</td>
                 </tr>
                 <tr>
-                    <th scope="row">Reinforcement Learning</th>
+                    <th scope="row">RL Frameworks</th>
+                    <td>Gymnasium, Stable-Baselines3</td>
+                </tr>
+                <tr>
+                    <th scope="row">Algorithm</th>
                     <td>PPO, GAE, Actor-Critic MLP</td>
                 </tr>
                 <tr>
@@ -61,7 +65,8 @@ The framework was developed from field observations collected in the Val d'Adige
           <li class="list-group-item p-1"><small><code>weather_generator</code> KNN bootstrap for synthetic climate trajectories</small></li>
           <li class="list-group-item p-1"><small><code>soil_model</code> Autoregressive XGBoost model for daily soil tension</small></li>
           <li class="list-group-item p-1"><small><code>crop_model</code> AquaCrop simulation of biomass response</small></li>
-          <li class="list-group-item p-1"><small><code>rl_agent</code> PPO policy with GAE-based updates</small></li>
+          <li class="list-group-item p-1"><small><code>rl_environment</code> Custom Gymnasium environment for crop-soil interactions</small></li>
+          <li class="list-group-item p-1"><small><code>rl_agent</code> Stable-Baselines3 PPO policy with GAE-based updates</small></li>
         </ul>
     </div>
 </div>
@@ -95,7 +100,7 @@ The irrigation problem is modeled as a Markov Decision Process in which the poli
 1. **State:** current soil tension, next-day tension predicted under no irrigation, and 3-day forecasts of cumulative precipitation and maximum temperature.
 2. **Action:** a continuous irrigation amount in millimeters, selected for delivery on the following day.
 3. **Reward:** normalized crop biomass minus penalties for irrigation volume and deviations from the agronomically optimal soil tension range of 200-400 mbar.
-4. **Policy:** an actor-critic neural network with two hidden layers of 64 neurons, optimized using **PPO** and **Generalized Advantage Estimation**.
+4. **Policy:** an actor-critic neural network with two hidden layers of 64 neurons, trained with the **Stable-Baselines3 PPO** implementation and **Generalized Advantage Estimation** inside a custom **Gymnasium** environment.
 
 This design gives the agent short-term weather awareness. In particular, the policy can reduce irrigation before forecast rainfall instead of reacting only after the soil crosses a fixed threshold.
 
