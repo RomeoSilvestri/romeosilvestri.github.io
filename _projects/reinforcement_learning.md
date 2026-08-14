@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Deep Reinforcement Learning
+title: Reinforcement Learning
 description: A PPO agent trained in a crop-soil digital twin to learn weather-aware irrigation policies from limited field data.
 img: assets/img/reinforcement_learning/cover.png
 importance: 1
@@ -158,7 +158,7 @@ These results show that the agent learned a meaningful control strategy rather t
 
 <br>
 
-<h5><i class="fas fa-file-pdf"></i> Publication</h5>
+<h5><i class="fas fa-file-pdf"></i> Full Documentation</h5>
 <div class="publications">
   <p>The complete methodology, reinforcement learning formulation, and experimental results are available in the published paper:</p>
   <a href="{{ '/assets/pdf/Deep Reinforcement Learning for Irrigation Optimization Based on Crop-Soil Dynamics.pdf' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Read the Full Paper</a>
