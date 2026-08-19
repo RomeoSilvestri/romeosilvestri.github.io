@@ -4,26 +4,32 @@
   {% if site.enable_publication_thumbnails %}
     <div class="col col-sm-2 abbr">
       {%- if entry.abbr -%}
-        {%- if site.data.venues[entry.abbr] -%}
-          {% assign venue_style = null %}
-          {% if site.data.venues[entry.abbr].color != blank %}
-            {% assign venue_style = site.data.venues[entry.abbr].color | prepend: 'style="background-color:' | append: '"' %}
-          {%- endif -%}
-          <abbr
-            class="badge rounded w-100"
-            {% if venue_style %}
-              {{ venue_style }}
-            {% endif -%}
-          >
-            {% if site.data.venues[entry.abbr].url %}
-              <a href="{{ site.data.venues[entry.abbr].url }}">{{ entry.abbr }}</a>
-            {% else %}
-              <div>{{- entry.abbr -}}</div>
-            {% endif %}
-          </abbr>
-        {% else %}
-          <abbr class="badge rounded w-100">{{ entry.abbr }}</abbr>
+        {% assign venue = site.data.venues[entry.abbr] %}
+        {% assign venue_type = site.data.venues.venue_types[entry.venue_type] %}
+        {% assign venue_color = venue_type.color %}
+        {% if venue.color != blank %}
+          {% assign venue_color = venue.color %}
         {% endif %}
+        {% assign venue_style = null %}
+        {% if venue_color != blank %}
+          {% assign venue_style = venue_color | prepend: 'style="background-color:' | append: '"' %}
+        {%- endif -%}
+        <abbr
+          class="badge rounded w-100"
+          {% if venue.name %}
+            title="{{ venue.name }}"
+            aria-label="{{ entry.abbr }} — {{ venue.name }}"
+          {% endif %}
+          {% if venue_style %}
+            {{ venue_style }}
+          {% endif -%}
+        >
+          {% if venue.url %}
+            <a href="{{ venue.url }}">{{ entry.abbr }}</a>
+          {% else %}
+            <div>{{- entry.abbr -}}</div>
+          {% endif %}
+        </abbr>
       {% endif %}
       {% if entry.preview %}
         {% if entry.preview contains '://' %}
@@ -49,6 +55,23 @@
   <div id="{{ entry.key }}" class="{% if site.enable_publication_thumbnails %}col-sm-8{% else %}col-sm-10{% endif %}">
     <!-- Title -->
     <div class="title">{{ entry.title }}</div>
+    {% if entry.pubstatus %}
+      {% assign publication_status = site.data.venues.publication_statuses[entry.pubstatus] %}
+      {% assign publication_status_label = entry.pubstatus | replace: '_', ' ' | capitalize %}
+      {% if publication_status.label %}
+        {% assign publication_status_label = publication_status.label %}
+      {% endif %}
+      <div class="publication-meta">
+        <span
+          class="publication-status"
+          {% if publication_status.color %}
+            style="--publication-status-color: {{ publication_status.color }}"
+          {% endif %}
+        >
+          {{- publication_status_label -}}
+        </span>
+      </div>
+    {% endif %}
     <!-- Author -->
     <div class="author">
       {% assign author_array_size = entry.author_array | size %}
@@ -149,6 +172,7 @@
     </div>
 
     <!-- Journal/Book title and date -->
+    {% assign entry_venue = site.data.venues[entry.abbr] %}
     {% assign proceedings = 'inproceedings,incollection' | split: ',' %}
     {% assign thesis = 'thesis,mastersthesis,phdthesis' | split: ',' %}
     {% if entry.type == 'article' %}
@@ -157,6 +181,8 @@
       {% capture entrytype %}<em>In {{ entry.booktitle }}</em>{% endcapture %}
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
+    {% elsif entry_venue.name %}
+      {% capture entrytype %}<em>{{ entry_venue.name }}</em>{% endcapture %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}
@@ -183,9 +209,11 @@
     <div class="periodical">
       {{ periodical | strip }}
     </div>
-    <div class="periodical">
-      {{ entry.note | strip }}
-    </div>
+    {% if entry.note %}
+      <div class="periodical publication-note">
+        {{ entry.note | strip }}
+      </div>
+    {% endif %}
 
     <!-- Links/Buttons -->
     <div class="links">

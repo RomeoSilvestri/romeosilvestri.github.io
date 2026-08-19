@@ -1,46 +1,79 @@
 ---
 ---
 
+@unpublished{silvestri2026weathersynth,
+  title  = {WeatherSynth: A Modular Framework for Multivariate Weather Generation, Model Selection, and Climate Conditioning},
+  author = {Silvestri, Romeo and Antonini, Mattia and Vecchio, Massimo and Antonelli, Fabio},
+  year   = {2026},
+  journal = {Environmental Modelling & Software},
+
+  abbr       = {EMS},
+  venue_type = {journal},
+  pubstatus  = {in_preparation},
+  preview    = {weathersynth.png}
+}
+
+@unpublished{grazieschi2026wasserstein,
+  title   = {A Calibrated Wasserstein Drift Detector for Residual-Based Monitoring of Regression Models},
+  author  = {Grazieschi, Paolo and Silvestri, Romeo and Antonini, Mattia and Vecchio, Massimo},
+  year    = {2026},
+  journal = {Neurocomputing},
+
+  abbr       = {Neurocomputing},
+  venue_type = {journal},
+  pubstatus  = {in_preparation},
+  preview    = {wasserstein_concept_drift.png}
+}
+
 @misc{silvestri2026rag,
   title     = {A Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews},
   author    = {Silvestri, Romeo and Pincheira, Miguel and Vecchio, Massimo and Antonelli, Fabio},
   year      = {2026},
-  note      = {Preprint available at ResearchGate and SSRN. Currently under review in Neural Computing and Applications (NCAA).},
+  journal   = {Neural Computing and Applications},
+  note      = {Preprint available on ResearchGate and SSRN.},
 
-  abbr      = {NCAA (submitted)},
+  abbr      = {NCAA},
+  venue_type = {journal},
+  pubstatus = {submitted},
   abstract  = {Systematic reviews and meta-analyses are essential for advancing scientific research,
                but they are time-consuming, labor-intensive, and prone to human error during literature
                selection and data extraction. This paper proposes a framework that integrates Large
                Language Models (LLMs) and retrieval-augmented generation (RAG) into the PRISMA 2020
-               workflow to assist and standardize key review tasks. The framework uses structured query
-               templates to ensure reproducible bibliographic searches, an LLM-driven pipeline for
-               title and abstract screening, and a RAG-based full-text eligibility assessment. Both
-               automated stages rely on structured prompt templates that encode inclusion and exclusion
-               criteria as machine-interpretable instructions. Beyond selecting relevant papers, it extracts
-               specific information from documents, such as application details or datasets, and harmonizes it
-               into a standardized metadata schema. To evaluate our proposal, we performed an experimental
-               validation using an existing systematic literature review on Human Action Quality Assessment (AQA)
-               as a reference. The framework achieved an extraction accuracy of 85.11\% for domain-specific datasets
-               and identified 25 additional data sources not reported in the original review.
-               The article detection rate of 72.34\% was primarily attributable to the dataset-oriented query
-               design adopted in the identification phase, while the LLM-based screening and RAG-based eligibility
-               stages retained 97.14\% of the reference studies that entered the automated pipeline. These results
-               suggest that the framework can effectively assist in identifying relevant studies and extracting
-               information while maintaining alignment with PRISMA 2020 guidelines. The proposed approach is
-               structured to facilitate adaptation to other research areas by declaring new query and promtp templates.},
+               workflow to assist and standardize key review tasks. Our contribution is methodological rather
+               than algorithmic: we operationalize its stages as a single reproducible, auditable pipeline built
+               from established, openly available components, prioritizing transparency and re-execution over
+               customized elements. The framework uses structured query templates to ensure reproducible
+               bibliographic searches, an LLM-driven pipeline for title and abstract screening, and a RAG-based
+               full-text eligibility assessment. Both automated stages rely on structured prompt templates that
+               encode inclusion and exclusion criteria as machine-interpretable instructions. Beyond selecting
+               relevant papers, it extracts specific information from documents, such as application details or
+               datasets, and harmonizes it into a standardized metadata schema. To evaluate our proposal, we
+               performed an experimental validation using an existing systematic literature review on Human Action
+               Quality Assessment (AQA) as a reference. The framework achieved an extraction recall of 85.11\% for
+               domain-specific datasets and identified 25 additional data sources not reported in the original
+               review. The pipeline achieved an overall article detection rate of 71.28\%. This reduction was
+               primarily a consequence of the strict, dataset-oriented Boolean query adopted in the identification
+               phase, rather than failures in the automated LLM or RAG components. Supplementary analyses confirmed
+               near-deterministic behavior across repeated runs and successful transfer to a different LLM family at
+               negligible computational cost. These results suggest that the framework can effectively assist in
+               identifying relevant studies and extracting information while maintaining alignment with PRISMA 2020
+               guidelines. The proposed approach is structured to facilitate adaptation to other research areas by
+               declaring new query and prompt templates.},
   bibtex_show = {true},
   html      = {https://ssrn.com/abstract=6416050},
-  pdf       = {A Generalizable Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews.pdf},
+  pdf       = {A Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews.pdf},
   preview   = {prisma.png}
 }
 
-@unpublished{silvestri2026rl,
+@inproceedings{silvestri2026rl,
   title     = {Deep Reinforcement Learning for Irrigation Optimization Based on Crop-Soil Dynamics},
   author    = {Silvestri, Romeo and Antonini, Mattia and Vecchio, Massimo and Antonelli, Fabio},
+  booktitle = {2026 IEEE International Workshop on Metrology for Industry 4.0 and IoT (MetroInd4.0\&IoT)},
   year      = {2026},
-  note      = {Paper accepted for publication and soon to appear online.},
 
   abbr      = {IEEE MetroInd},
+  venue_type = {conference},
+  pubstatus = {accepted},
   abstract  = {Irrigation management is a key challenge in modern agriculture due to water scarcity and
                increasing climate variability. This work proposes a deep reinforcement learning (DRL) framework for
                irrigation scheduling that addresses data scarcity by training the agent within a digital twin of crop–soil
@@ -68,6 +101,8 @@
   publisher = {MDPI},
 
   abbr      = {MDPI Sensors},
+  venue_type = {journal},
+  pubstatus = {published},
   abstract  = {Efficient water management is a critical challenge for modern agriculture, particularly
                in the context of increasing climate variability and limited freshwater resources. This
                study presents a comparative field-based evaluation of two fuzzy-logic-based irrigation
@@ -96,6 +131,8 @@
   year      = {2025},
 
   abbr      = {IEEE CoDIT},
+  venue_type = {conference},
+  pubstatus = {published},
   abstract  = {This paper presents the development and evaluation of a Fuzzy Decision Support System
                for irrigation management to promote sustainable water use in precision agriculture.
                A Mamdani-type fuzzy logic model was designed to optimize irrigation scheduling for
@@ -124,6 +161,8 @@
   organization = {IEEE},
 
   abbr         = {IEEE MetroAgriFor},
+  venue_type   = {conference},
+  pubstatus    = {published},
   abstract     = {This paper provides valuable insights into the application of spatial interpolation
                   techniques in smart agriculture and highlights the potential for further improvements
                   through the integration of advanced geostatistical models. Specifically, it evaluates

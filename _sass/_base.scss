@@ -714,8 +714,86 @@ footer.sticky-bottom {
 
 // Publications
 
+.publication-overview {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.75rem;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.publication-overview-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 5.25rem;
+  padding: 0.75rem 0.5rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0.5rem;
+  background: var(--global-card-bg-color);
+  text-align: center;
+}
+
+.publication-overview-count {
+  color: var(--global-theme-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.publication-overview-label {
+  margin-top: 0.4rem;
+  color: var(--global-text-color-light);
+  font-size: 0.82rem;
+  line-height: 1.2;
+}
+
+.publication-type-summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+}
+
+.publication-type-dot {
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+}
+
+@media (max-width: 575px) {
+  .publication-overview {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 .publications {
   margin-top: 2rem;
+
+  .publication-section {
+    margin-top: 2.75rem;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+
+  h2.publication-section-title {
+    margin-bottom: 0.25rem;
+    color: var(--global-text-color);
+    font-size: 1.45rem;
+    font-weight: 500;
+  }
+
+  .publication-section-description {
+    margin-bottom: 1rem;
+    color: var(--global-text-color-light);
+    font-size: 0.9rem;
+  }
 
   h1 {
     color: var(--global-theme-color);
@@ -759,7 +837,11 @@ footer.sticky-bottom {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
+          padding: 0.45em 0.55em;
           color: var(--global-card-bg-color) !important;
+          line-height: 1.2;
+          overflow-wrap: anywhere;
+          white-space: normal;
 
           a {
             color: white;
@@ -778,6 +860,25 @@ footer.sticky-bottom {
 
       .title {
         font-weight: bolder;
+      }
+
+      .publication-meta {
+        margin: 0.3rem 0 0.4rem;
+      }
+
+      .publication-status {
+        display: inline-block;
+        padding: 0.16rem 0.5rem;
+        border: 1px solid var(--publication-status-color, var(--global-text-color-light));
+        border-radius: 999px;
+        color: var(--publication-status-color, var(--global-text-color-light));
+        font-size: 0.72rem;
+        font-weight: 500;
+        line-height: 1.3;
+      }
+
+      .publication-note {
+        margin-top: 0.15rem;
       }
 
       .author {

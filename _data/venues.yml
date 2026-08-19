@@ -1,6 +1,30 @@
-"NCAA (submitted)":
-  url: https://link.springer.com/journal/521
-  color: "#00369f"
+# In papers.bib, use venue_type = {journal} or {conference}.
+# Add a color to a specific venue only when it must override these defaults.
+venue_types:
+  journal:
+    label: Journal
+    color: "#00369f"
+  conference:
+    label: Conference
+    color: "#b509ac"
+
+publication_statuses:
+  published:
+    label: Published
+    color: "#198754"
+  accepted:
+    label: Accepted
+    color: "#198754"
+  submitted:
+    label: Submitted / under review
+    color: "#d97706"
+  in_preparation:
+    label: In preparation
+    color: "#6c757d"
+
+EMS:
+  name: "Environmental Modelling & Software"
+  url: https://www.sciencedirect.com/journal/environmental-modelling-and-software
 
 "IEEE CoDIT":
   url: https://codit2025.org/
@@ -9,8 +33,15 @@
   url: https://www.metroagrifor.org/maf2024/index
 
 "IEEE MetroInd":
+  name: "2026 IEEE International Workshop on Metrology for Industry 4.0 and IoT (MetroInd4.0&IoT)"
   url: https://www.metroind40iot.org/
 
 "MDPI Sensors":
   url: https://www.mdpi.com/journal/sensors
-  color: "#00369f"
+
+NCAA:
+  name: Neural Computing and Applications
+  url: https://link.springer.com/journal/521
+
+Neurocomputing:
+  url: https://www.sciencedirect.com/journal/neurocomputing
