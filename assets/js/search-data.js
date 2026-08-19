@@ -11,14 +11,14 @@ ninja.data = [{
     },
   },{id: "nav-projects",
           title: "projects",
-          description: "Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with. The collection is still evolving, and I plan to review and reorganize the content in the future.",
+          description: "A selection of professional and academic projects across a variety of topics and application areas.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/projects/";
           },
         },{id: "nav-publications",
           title: "publications",
-          description: "Welcome to my publications section! Here you’ll find a curated selection of my work, including journal articles and conference papers. While this list is still short and growing, it reflects some areas I am passionate about and the research I’ve been involved in.",
+          description: "Research publications and ongoing manuscripts spanning machine learning, intelligent decision support, environmental modelling, and applied AI. Entries are grouped by publication status and include abstracts, full texts, and external records where available.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
