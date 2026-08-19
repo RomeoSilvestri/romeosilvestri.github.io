@@ -3,16 +3,31 @@ $(document).ready(function () {
   $("a.abstract").click(function () {
     $(this).parent().parent().find(".abstract.hidden").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".doi.hidden.open").toggleClass("open");
+    $(this).parent().parent().find("a.doi").attr("aria-expanded", "false");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
   });
   $("a.award").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden").toggleClass("open");
+    $(this).parent().parent().find(".doi.hidden.open").toggleClass("open");
+    $(this).parent().parent().find("a.doi").attr("aria-expanded", "false");
     $(this).parent().parent().find(".bibtex.hidden.open").toggleClass("open");
+  });
+  $("a.doi").click(function () {
+    const $publication = $(this).parent().parent();
+    const $doi = $publication.find(".doi.hidden");
+    $publication.find(".abstract.hidden.open").toggleClass("open");
+    $publication.find(".award.hidden.open").toggleClass("open");
+    $publication.find(".bibtex.hidden.open").toggleClass("open");
+    $doi.toggleClass("open");
+    $(this).attr("aria-expanded", $doi.hasClass("open").toString());
   });
   $("a.bibtex").click(function () {
     $(this).parent().parent().find(".abstract.hidden.open").toggleClass("open");
     $(this).parent().parent().find(".award.hidden.open").toggleClass("open");
+    $(this).parent().parent().find(".doi.hidden.open").toggleClass("open");
+    $(this).parent().parent().find("a.doi").attr("aria-expanded", "false");
     $(this).parent().parent().find(".bibtex.hidden").toggleClass("open");
   });
   $("a").removeClass("waves-effect waves-light");

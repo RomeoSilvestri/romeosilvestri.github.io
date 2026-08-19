@@ -24,9 +24,23 @@
         <!-- Social Icons -->
         <div class="navbar-brand social">{% include social.liquid %}</div>
       {% endif %}
+      {% if site.enable_darkmode %}
+        <!-- Theme toggle kept visible outside the collapsed navigation on mobile -->
+        <div class="toggle-container d-flex d-sm-none ml-auto">
+          <button
+            id="light-toggle-mobile"
+            class="light-toggle"
+            title="Toggle light/dark theme"
+            aria-label="Toggle light/dark theme"
+          >
+            <i class="ti ti-moon-filled light-toggle-dark" aria-hidden="true"></i>
+            <i class="ti ti-sun-filled light-toggle-light" aria-hidden="true"></i>
+          </button>
+        </div>
+      {% endif %}
       <!-- Navbar Toggle -->
       <button
-        class="navbar-toggler collapsed ml-auto"
+        class="navbar-toggler collapsed {% if site.enable_darkmode %}ml-2{% else %}ml-auto{% endif %}"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNav"
@@ -127,10 +141,10 @@
           {% endif %}
           {% if site.enable_darkmode %}
             <!-- Toggle theme mode -->
-            <li class="toggle-container">
-              <button id="light-toggle" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">
-                <i class="ti ti-moon-filled" id="light-toggle-dark"></i>
-                <i class="ti ti-sun-filled" id="light-toggle-light"></i>
+            <li class="toggle-container d-none d-sm-flex">
+              <button id="light-toggle" class="light-toggle" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">
+                <i class="ti ti-moon-filled light-toggle-dark" aria-hidden="true"></i>
+                <i class="ti ti-sun-filled light-toggle-light" aria-hidden="true"></i>
               </button>
             </li>
           {% endif %}

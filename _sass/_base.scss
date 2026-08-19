@@ -397,7 +397,7 @@ ul.task-list input[type="checkbox"] {
   }
 }
 
-#light-toggle,
+.light-toggle,
 #search-toggle {
   padding: 0;
   border: 0;
@@ -407,6 +407,16 @@ ul.task-list input[type="checkbox"] {
   &:hover {
     color: var(--global-hover-color);
   }
+}
+
+.light-toggle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1.15rem;
+  line-height: 1;
 }
 
 // Social (bottom)
@@ -958,6 +968,7 @@ footer.sticky-bottom {
           padding-top: 0.25rem;
           padding-bottom: 0.25rem;
           margin-left: 0;
+          cursor: pointer;
 
           &:hover {
             color: var(--global-theme-color);
@@ -1021,6 +1032,20 @@ footer.sticky-bottom {
       }
 
       div.abstract.hidden.open {
+        border-color: var(--global-text-color);
+      }
+
+      div.doi.hidden {
+        border: dashed 1px var(--global-bg-color);
+        text-align: left;
+
+        .doi-value {
+          overflow-wrap: anywhere;
+          user-select: all;
+        }
+      }
+
+      div.doi.hidden.open {
         border-color: var(--global-text-color);
       }
     }

@@ -269,12 +269,14 @@ let initTheme = () => {
 
   setThemeSetting(themeSetting);
 
-  // Add event listener to the theme toggle button.
+  // Add the same event listener to the desktop and mobile theme toggles.
   document.addEventListener("DOMContentLoaded", function () {
-    const mode_toggle = document.getElementById("light-toggle");
+    const mode_toggles = document.querySelectorAll(".light-toggle");
 
-    mode_toggle.addEventListener("click", function () {
-      toggleThemeSetting();
+    mode_toggles.forEach(function (mode_toggle) {
+      mode_toggle.addEventListener("click", function () {
+        toggleThemeSetting();
+      });
     });
   });
 
