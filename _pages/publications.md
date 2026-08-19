@@ -23,22 +23,22 @@ nav_order: 2
 {% capture conference_count %}{% bibliography_count --query @*[venue_type=conference]* %}{% endcapture %}
 
 <div class="publication-overview" aria-label="Publication overview">
-  <div class="publication-overview-card">
+  <a class="publication-overview-card" href="#published" aria-label="View published publications">
     <span class="publication-overview-count">{{ published_count }}</span>
     <span class="publication-overview-label">Published</span>
-  </div>
-  <div class="publication-overview-card">
+  </a>
+  <a class="publication-overview-card" href="#accepted" aria-label="View accepted publications">
     <span class="publication-overview-count">{{ accepted_count }}</span>
     <span class="publication-overview-label">Accepted</span>
-  </div>
-  <div class="publication-overview-card">
+  </a>
+  <a class="publication-overview-card" href="#under-review" aria-label="View publications under review">
     <span class="publication-overview-count">{{ submitted_count }}</span>
     <span class="publication-overview-label">Under review</span>
-  </div>
-  <div class="publication-overview-card">
+  </a>
+  <a class="publication-overview-card" href="#in-preparation" aria-label="View publications in preparation">
     <span class="publication-overview-count">{{ preparation_count }}</span>
     <span class="publication-overview-label">In preparation</span>
-  </div>
+  </a>
 </div>
 
 <p class="publication-type-summary">
@@ -59,25 +59,25 @@ nav_order: 2
 
 <div class="publications">
 
-<section class="publication-section">
+<section id="published" class="publication-section">
   <h2 class="publication-section-title">Published</h2>
   <p class="publication-section-description">Peer-reviewed journal articles and conference papers.</p>
   {{ published_publications }}
 </section>
 
-<section class="publication-section">
+<section id="accepted" class="publication-section">
   <h2 class="publication-section-title">Accepted &amp; forthcoming</h2>
   <p class="publication-section-description">Accepted manuscripts awaiting their final publication record.</p>
   {{ accepted_publications }}
 </section>
 
-<section class="publication-section">
+<section id="under-review" class="publication-section">
   <h2 class="publication-section-title">Submitted &amp; under review</h2>
   <p class="publication-section-description">Manuscripts currently in the editorial and peer-review process.</p>
   {{ submitted_publications }}
 </section>
 
-<section class="publication-section">
+<section id="in-preparation" class="publication-section">
   <h2 class="publication-section-title">In preparation</h2>
   <p class="publication-section-description">Ongoing manuscripts that are being prepared for submission.</p>
   {{ preparation_publications }}
