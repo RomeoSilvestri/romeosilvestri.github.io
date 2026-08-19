@@ -9,6 +9,6 @@ WORKDIR /site
 COPY Gemfile Gemfile.lock ./
 RUN bundle install
 
-EXPOSE 4000
+EXPOSE 4000 35729
 
-CMD ["bash", "-lc", "JEKYLL_ENV=production bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload --destination /tmp/site --disable-disk-cache"]
+CMD ["bash", "-lc", "JEKYLL_ENV=production bundle exec jekyll serve --host 0.0.0.0 --port 4000 --livereload --force_polling --destination /tmp/site --disable-disk-cache"]
