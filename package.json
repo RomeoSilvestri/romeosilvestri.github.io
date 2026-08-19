@@ -1,0 +1,10 @@
+{
+  "name": "romeosilvestri-github-io",
+  "private": true,
+  "scripts": {
+    "purgecss": "purgecss --css \"_site/assets/css/*.css\" --content \"_site/**/*.html\" \"_site/**/*.js\" --output \"_site/assets/css/\" --skippedContentGlobs \"_site/assets/**/*.html\""
+  },
+  "devDependencies": {
+    "purgecss": "8.0.0"
+  }
+}

@@ -1,8 +1,7 @@
 FROM ruby:3.3
 
 RUN apt-get update \
-    && apt-get install -y git build-essential python3-pip nodejs \
-    && pip3 install --break-system-packages --no-cache-dir nbconvert ipython
+    && apt-get install -y git build-essential nodejs
 
 WORKDIR /site
 

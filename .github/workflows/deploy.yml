@@ -7,6 +7,10 @@ on:
     branches: [main, master]
   workflow_dispatch:
 
+concurrency:
+  group: deploy-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
 permissions:
   contents: write
 
@@ -15,16 +19,28 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: "3.3.5"
           bundler-cache: true
-      - name: Set up Python
-        uses: actions/setup-python@v5
+      - name: Set up Node.js
+        uses: actions/setup-node@v6
         with:
-          python-version: "3.13"
+          node-version: "22"
+          cache: npm
+      - name: Install pinned frontend tools
+        run: npm ci
+      - name: Restore responsive WebP cache
+        id: responsive-webp-cache
+        uses: actions/cache@v5
+        with:
+          path: _site/assets/img/**/*.webp
+          key: responsive-webp-v1-${{ runner.os }}-${{ hashFiles('assets/img/**', '_config.yml', 'Gemfile.lock') }}
+      - name: Refresh cached WebP timestamps
+        if: steps.responsive-webp-cache.outputs.cache-hit == 'true'
+        run: find _site/assets/img -type f -name '*.webp' -exec touch {} +
       - name: Set the discussion repository
         uses: fjogeleit/yaml-update-action@main
         with:
@@ -35,13 +51,10 @@ jobs:
       - name: Build the site
         run: |
           sudo apt-get update && sudo apt-get install -y imagemagick
-          pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
       - name: Remove unused CSS
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
+        run: npm run purgecss
       - name: Publish
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4

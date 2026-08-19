@@ -175,9 +175,11 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - LICENSE
+  - node_modules
+  - package.json
+  - package-lock.json
   - _posts
   - _pages/blog.md
-  - purgecss.config.js
   - README.md
   - vendor
 keep_files:
@@ -190,7 +192,6 @@ plugins:
   - jekyll-email-protect
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
