@@ -5,22 +5,14 @@
     "image": "",
     "email": "silveromeo98@gmail.com",
     "phone": "",
-    "url": "https://romeosilvestri.github.io/",
-    "summary": "A passionate researcher in the field of Machine Learning and Artificial Intelligence, with a strong background in statistics and data science.",
+    "summary": "Applied Machine Learning Engineer with 3+ years of work experience and a strong foundation in statistics and data science. Specializing in AI research, MLOps workflows, reinforcement learning and Generative AI, I design and deploy robust, scalable models. Author of peer-reviewed papers, eager to apply my technical expertise and research to deliver projects with real-world impact.",
     "location": {
       "address": "",
       "postalCode": "",
       "city": "Trento",
       "countryCode": "IT",
       "region": "Italy"
-    },
-    "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
-    ]
+    }
   },
   "work": [
     {
@@ -30,7 +22,7 @@
       "url": "https://www.fbk.eu/it/",
       "startDate": "2023-12-04",
       "summary": "FBK is a leading Italian research institute focused on science and technology innovation, with a strong emphasis on AI, data science, and their real-world applications across sectors including agriculture, health, and industry.",
-      "highlights": ["Optimized ML pipelines and provided APIs in a research and production environment using Python, FastAPI, GitLab, LangGraph, and MLflow, while collaborating closely with domain experts to address complex problems and streamline processes.", "Designed, tested, and deployed a Decision Support System (DSS) for irrigation, integrating heterogeneous data sources, including IoT sensors and weather data, reducing operational costs by around 50% across several companies.", "Developed a Deep Reinforcement Learning agent with PPO optimization, leveraging a digital twin environment using a surrogate and a physical model for simulation and policy training, with synthetic weather data generation via KNN bootstrap.", "Developed a multi-agent LLM-based chatbot for the European AI Factories project, leveraging pre-trained models and Retrieval-Augmented Generation (RAG) to support decision-making. The system provides real-time, data-driven advice on agriculture, integrating legal guidelines and technical best practices, with support for global and region-specific recommendation models.", "Built state-of-the-art time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and rigorous validation."]
+      "highlights": ["Optimized ML pipelines and provided APIs in a research and production environment using Python, FastAPI, GitLab, LangGraph, and MLflow, while collaborating closely with domain experts to address complex problems and streamline processes.", "Designed, tested, and deployed a Decision Support System (DSS) for irrigation, integrating heterogeneous data sources, including IoT sensors and weather data, reducing operational costs by around 50% across several companies.", "Developed a Deep Reinforcement Learning agent with PPO optimization, leveraging a digital twin environment using a surrogate and a physical model for simulation and policy training, with synthetic weather data generation via KNN bootstrap.", "Developed a multi-agent LLM-based chatbot for the European AI Factories project, leveraging pre-trained models and Retrieval-Augmented Generation (RAG) to support decision-making. The system provides real-time, data-driven advice on agriculture, integrating legal guidelines and best technical practices, with support for global and region-specific recommendation models.", "Built state-of-the-art time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and rigorous validation."]
     },
     {
       "name": "Youbidata",
@@ -40,7 +32,7 @@
       "startDate": "2023-10-01",
       "endDate": "2023-11-30",
       "summary": "Youbidata is a data-driven startup specializing in business intelligence and advanced analytics, helping companies make informed decisions through customized data solutions and strategic consulting.",
-      "highlights": ["Utilized Python, PostgreSQL, and Power BI for analytics and developed a centralized dashboard for financial monitoring.", "Managed an end-to-end consulting project to optimize financial operations of a company and design meaningful KPIs."]
+      "highlights": ["Developed a centralized financial monitoring dashboard using PostgreSQL and Power BI to provide KPIs for a consulting client."]
     },
     {
       "name": "Italian National Institute of Statistics (ISTAT)",
@@ -50,7 +42,7 @@
       "startDate": "2023-03-10",
       "endDate": "2023-08-31",
       "summary": "ISTAT is the official statistical agency of Italy, responsible for collecting, analyzing, and disseminating data to support government planning, public policy, and socio-economic research.",
-      "highlights": ["Processed and analyzed national demographic data using Excel, R, and SQL to uncover socio-economic trends. The analysis outcomes were leveraged to create periodic reports, offering valuable insights to support strategic decisions.", "Evaluated the Austrian quality framework's suitability for the Italian Census, achieving statistically significant results."]
+      "highlights": ["Analyzed national demographic data using Excel, R and SQL to uncover socio-economic trends and produce periodic reports.", "Evaluated the Austrian quality framework's suitability for the Italian Census, achieving statistically significant results."]
     },
     {
       "name": "Sapienza University of Rome",
