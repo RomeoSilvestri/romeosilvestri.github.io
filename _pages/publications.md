@@ -46,7 +46,7 @@ nav_order: 2
     class="publication-type-dot"
     style="background-color: {{ site.data.venues.venue_types.journal.color }}"
   ></span>
-  {{ journal_count }} journal papers
+  {{ journal_count }} journal articles
   <span aria-hidden="true">&middot;</span>
   <span
     class="publication-type-dot"
