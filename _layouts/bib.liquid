@@ -44,7 +44,7 @@
             class="preview z-depth-1 rounded"
             zoomable=true
             zoom_src=entry_path
-            alt=entry.preview
+            alt=entry.title
           %}
         {% endif %}
       {% endif %}
@@ -182,7 +182,13 @@
     {% elsif thesis contains entry.type %}
       {% capture entrytype %}<em>{{ entry.school }}</em>{% endcapture %}
     {% elsif entry_venue.name %}
-      {% capture entrytype %}<em>{{ entry_venue.name }}</em>{% endcapture %}
+      {% if entry.pubstatus == 'in_preparation' %}
+        {% capture entrytype %}Target journal: <em>{{ entry_venue.name }}</em>{% endcapture %}
+      {% elsif entry.pubstatus == 'submitted' %}
+        {% capture entrytype %}Submitted to <em>{{ entry_venue.name }}</em>{% endcapture %}
+      {% else %}
+        {% capture entrytype %}<em>{{ entry_venue.name }}</em>{% endcapture %}
+      {% endif %}
     {% else %}
       {% capture entrytype %}{% endcapture %}
     {% endif %}

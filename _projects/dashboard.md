@@ -3,9 +3,10 @@ layout: page
 title: BI Financial Dashboard
 description: End-to-end design and implementation of an interactive Power BI dashboard for executive financial reporting.
 img: assets/img/fin_dashboard/cover.png
-importance: 8
+importance: 9
 category: work
 related_publications: false
+card_tags: [Power BI, SQL, DAX]
 ---
 
 To modernize the client's financial reporting, I led the transformation from fragmented Excel spreadsheets into a **centralized Power BI solution**. The goal was to eliminate manual processes, enable interactive drill-downs, and deliver reliable, timely insights for executive decision-making.

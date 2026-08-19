@@ -6,6 +6,10 @@ img: assets/img/prisma/cover.png
 importance: 1
 category: work
 related_publications: false
+card_tags: [LLMs, RAG, PRISMA]
+related_papers:
+  - key: silvestri2026rag
+    label: Related publication
 ---
 
 Automating PRISMA is an innovative framework aimed at simplifying and accelerating systematic literature reviews, strictly aligning with **PRISMA 2020** standards. By integrating Large Language Models (LLMs), specifically Google Gemini, and Retrieval-Augmented Generation (RAG) systems, the project automates the most time-consuming phases of bibliographic research.

@@ -6,6 +6,7 @@ img: assets/img/master_thesis/cover.png
 importance: 1
 category: university
 related_publications: false
+card_tags: [Forecasting, Spatial Econometrics, Machine Learning]
 ---
 
 Real estate valuation is a complex task where location introduces strong spatial dependencies that standard models often fail to capture.

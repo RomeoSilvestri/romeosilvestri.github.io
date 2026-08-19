@@ -3,9 +3,15 @@ layout: page
 title: DSS for Irrigation
 description: Development and comparative evaluation of Fuzzy Logic (Mamdani) and Neuro-Adaptive (ANFIS) decision support systems for agriculture.
 img: assets/img/publication_preview/dss_irrigation1.png
-importance: 4
+importance: 5
 category: work
 related_publications: false
+card_tags: [Fuzzy Logic, ANFIS, Irrigation]
+related_papers:
+  - key: silvestri2025smart
+    label: Sensors article
+  - key: codit25
+    label: CoDIT paper
 ---
 
 Efficient water management in agriculture requires balancing two conflicting goals: minimizing water usage and maximizing crop health. This project developed and validated an **Irrigation Decision Support System (IDSS)** for vineyards in the Trentino region (Italy), evolving from an expert-based rule system to an adaptive machine learning approach.

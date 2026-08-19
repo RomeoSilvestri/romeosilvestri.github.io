@@ -3,9 +3,10 @@ layout: page
 title: AI Agents for Agritech
 description: An advanced Multi-Agent Assistant leveraging AI agents, APIs, and RAG for precise agricultural insights.
 img: assets/img/agrigraph/cover.png
-importance: 3
+importance: 4
 category: work
 related_publications: false
+card_tags: [AI Agents, RAG, LangGraph]
 ---
 
 Modern agriculture demands intelligent systems capable of synthesizing vast amounts of data into actionable advice. **Agrigraph** is a sophisticated assistant, created for a European project, that orchestrates multiple AI agents to provide farmers and agronomists with real-time weather data, historical analysis, and precise irrigation recommendations based on project documentation and sensor simulations.

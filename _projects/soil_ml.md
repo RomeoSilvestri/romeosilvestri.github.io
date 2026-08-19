@@ -3,9 +3,10 @@ layout: page
 title: Time Series Forecasting
 description: Time-series forecasting project comparing Statistical Models (ARIMAX) and Machine Learning for soil water content prediction.
 img: assets/img/soil_ml/cover.png
-importance: 6
+importance: 8
 category: work
 related_publications: false
+card_tags: [Time Series, XGBoost, LSTM]
 ---
 
 Predicting soil moisture is inherently a **time-series problem**: today's water content depends on yesterday's, modulated by external factors like rainfall and evapotranspiration. In this project, I modeled these temporal dynamics using **Statistical Time Series** methods (ARIMAX, Panel Data) and compared them against Machine Learning regressors.

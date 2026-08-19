@@ -3,9 +3,10 @@ layout: page
 title: IoT Data Analysis
 description: Classical data analysis project focused on data quality assessment and validation of an automated irrigation algorithm.
 img: assets/img/ifarming/cover.png
-importance: 5
+importance: 6
 category: work
 related_publications: false
+card_tags: [Data Quality, IoT, Statistics]
 ---
 
 Precision agriculture promises to optimize water usage, but in real-world deployments **data quality** remains the biggest bottleneck. This project, conducted within a European Agricultural testing framework, focused on validating a commercial IoT solution for vineyards against scientific reference instruments.

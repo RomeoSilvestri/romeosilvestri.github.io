@@ -3,9 +3,10 @@ layout: page
 title: Full MLOps Workflow
 description: Advanced data integration and predictive modeling for precision irrigation using physical and machine learning approaches.
 img: assets/img/soilcast/cover.png
-importance: 2
+importance: 3
 category: work
 related_publications: false
+card_tags: [MLOps, Forecasting, APIs]
 ---
 
 Efficient water management in agriculture requires more than just raw data; it demands the integration of diverse information sources into actionable predictive models. **SoilCast** is a comprehensive framework for the **European AI Factory** project that synchronizes field sensors, weather forecasts, and crop physiology to optimize irrigation scheduling.  

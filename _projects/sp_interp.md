@@ -3,9 +3,13 @@ layout: page
 title: Spatial Interpolation
 description: Comparative analysis of geostatistical algorithms to transform sparse sensor data into continuous surface maps.
 img: assets/img/publication_preview/spatial_interpolation.png
-importance: 5
+importance: 7
 category: work
 related_publications: false
+card_tags: [Kriging, Geospatial, Python]
+related_papers:
+  - key: silvestri2024comparative
+    label: Related publication
 ---
 
 In environmental monitoring, data is often limited to specific point locations. This project addresses the "missing data" problem by comparing deterministic and geostatistical algorithms to generate continuous high-resolution maps from sparse inputs.

@@ -6,6 +6,7 @@ img: assets/img/bachelor_thesis/cover.png
 importance: 2
 category: university
 related_publications: false
+card_tags: [Demography, GLM, R]
 ---
 
 Demographic dynamics are driven by natural balances (births and deaths) and migratory movements. While natural factors are endogenous determinants, migrations are complex events capable of altering the age structure and fertility potential of a territory. 

@@ -3,9 +3,10 @@ layout: page
 title: Census Quality Framework
 description: Data quality assessment and weighting methodology for the Italian Integrated System of Registers (SIR) based on the Austrian Framework.
 img: assets/img/istat/cover.png
-importance: 9
+importance: 10
 category: work
 related_publications: false
+card_tags: [Data Quality, R, Official Statistics]
 ---
 
 Modern official statistics are shifting from traditional censuses to **Register-based Censuses**. This transition requires robust tools to evaluate the effectiveness and accuracy of administrative data. This project, conducted at **ISTAT**, focused on adapting the **Austrian Quality Framework** to the Italian context, specifically developing objective mathematical methods to aggregate quality indicators.

@@ -3,9 +3,13 @@ layout: page
 title: Reinforcement Learning
 description: A PPO agent trained in a crop-soil digital twin to learn weather-aware irrigation policies from limited field data.
 img: assets/img/reinforcement_learning/cover.png
-importance: 1
+importance: 2
 category: work
 related_publications: false
+card_tags: [PPO, Digital Twin, Reinforcement Learning]
+related_papers:
+  - key: silvestri2026rl
+    label: Related publication
 ---
 
 Irrigation scheduling is a sequential decision problem: every action changes the soil conditions that the crop and the next decision will encounter. This project applies **Deep Reinforcement Learning (DRL)** to learn an adaptive irrigation policy for vineyards, replacing fixed rules with an agent that improves through interaction with a **crop-soil digital twin**.

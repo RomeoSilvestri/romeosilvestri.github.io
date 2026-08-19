@@ -2,8 +2,7 @@
 layout: page
 title: projects
 permalink: /projects/
-description: Here you’ll find some of the projects I’ve worked on — at work, at university or just for fun. I like to use this space to share what I’m building and experimenting with.
-  The collection is still evolving, and I plan to review and reorganize the content in the future.
+description: A selection of professional and academic projects across a variety of topics and application areas.
 nav: true
 nav_order: 1
 display_categories: [work, university]
@@ -71,8 +70,4 @@ horizontal: false
 
 
 <br>
-Please note that many of my professional projects were developed within companies and are therefore private and not publicly shareable due to confidentiality and legal constraints. For this reason, I have included anonymized descriptions of selected projects to illustrate the scope of my experience.
-<br><br>
-For further details or clarifications, feel free to contact me privately.
-<br>
-For all my public repositories, check out my <a href="https://github.com/RomeoSilvestri?tab=repositories">GitHub repositories</a>.
+For public code and additional experiments, see my <a href="https://github.com/RomeoSilvestri?tab=repositories">GitHub repositories</a>.

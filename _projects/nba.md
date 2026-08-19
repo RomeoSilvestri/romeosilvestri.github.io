@@ -6,6 +6,7 @@ img: assets/img/nba_db/cover.png
 importance: 3
 category: university
 related_publications: false
+card_tags: [SQL, MongoDB, Data Modeling]
 ---
 
 Sports analytics relies heavily on the ability to store, retrieve, and analyze massive amounts of data efficiently. The **NBA (National Basketball Association)** ecosystem presents a complex data modeling challenge, involving interconnected entities like players, teams, games, and play-by-play statistics.
