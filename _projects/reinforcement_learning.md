@@ -8,7 +8,7 @@ category: work
 related_publications: false
 card_tags: [PPO, Digital Twin, Reinforcement Learning]
 related_papers:
-  - key: silvestri2026rl
+  - key: silvestri2026deep
     label: Related publication
 ---
 

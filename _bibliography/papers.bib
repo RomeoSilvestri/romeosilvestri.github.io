@@ -21,7 +21,8 @@
 
   abbr       = {Neurocomputing},
   venue_type = {journal},
-  pubstatus  = {in_preparation},
+  pubstatus  = {submitted},
+  abstract   = {Regression models deployed in production are vulnerable to concept drift, which degrades performance over time and requires timely monitoring. We introduce the Wasserstein Drift Detector, a model-agnostic online detector that monitors a deployed regression model's squared residual stream. The detector compares an older reference window and a recent window within a sliding residual buffer using the empirical $1$-Wasserstein distance, and signals drift when this distance exceeds a robust threshold calibrated from a rolling interquartile-range estimate; a hysteresis mechanism reduces redundant alarms. We evaluate the detector against ADWIN, KSWIN, and Page-Hinkley on nine synthetic drift scenarios under a shared automatic calibration protocol, covering abrupt, gradual, local, and global input-target shifts plus two shape-only residual-distribution shifts preserving the first two moments. At the calibrated operating points, the detector achieves a detection rate of at least $0.92$ in every scenario, whereas each baseline fails, with a detection rate of $0.00$ in one scenario, while its flicker rate never exceeds $0.02$ redundant alarms per $1{,}000$ post-drift samples. Holm-corrected paired tests and a Friedman--Nemenyi ranking confirm these differences; an ablation study attributes alarm stability to the hysteresis mechanism and robust threshold; a sensitivity analysis identifies the threshold multiplier as the main hyperparameter-sensitivity source on local and shape-only drifts. Two real-world case studies complement the benchmark: on a Toulouse bike-sharing residual stream with repeatedly non-unimodal residuals, the detector raises one to two orders of magnitude fewer alarms than the baselines, and a preliminary soil-moisture forecasting probe shows the same pattern.},
   preview    = {wasserstein_concept_drift.png}
 }
 
@@ -66,15 +67,18 @@
   preview   = {prisma.png}
 }
 
-@inproceedings{silvestri2026rl,
+@inproceedings{silvestri2026deep,
   title     = {Deep Reinforcement Learning for Irrigation Optimization Based on Crop-Soil Dynamics},
   author    = {Silvestri, Romeo and Antonini, Mattia and Vecchio, Massimo and Antonelli, Fabio},
-  booktitle = {2026 IEEE International Workshop on Metrology for Industry 4.0 and IoT (MetroInd4.0\&IoT)},
+  booktitle = {2026 IEEE International Workshop on Metrology for Industry 4.0 \& IoT (MetroInd4. 0 \& IoT)},
+  pages     = {766--771},
   year      = {2026},
+  organization = {IEEE},
+  doi       = {10.1109/MetroInd4.0IoT69397.2026.11653152},
 
   abbr      = {IEEE MetroInd},
   venue_type = {conference},
-  pubstatus = {accepted},
+  pubstatus = {published},
   abstract  = {Irrigation management is a key challenge in modern agriculture due to water scarcity and
                increasing climate variability. This work proposes a deep reinforcement learning (DRL) framework for
                irrigation scheduling that addresses data scarcity by training the agent within a digital twin of crop–soil
@@ -87,6 +91,7 @@
                days within the optimal soil tension range, while maintaining comparable crop productivity to observed
                practices.},
   bibtex_show = {true},
+  html      = {https://ieeexplore.ieee.org/document/11653152},
   pdf       = {Deep Reinforcement Learning for Irrigation Optimization Based on Crop-Soil Dynamics.pdf},
   preview={rl.png}
 }
