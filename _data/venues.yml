@@ -35,7 +35,8 @@ EMS:
 "IEEE MetroInd":
   url: https://www.metroind40iot.org/
 
-"MDPI Sensors":
+"Sensors":
+  name: "MDPI Sensors"
   url: https://www.mdpi.com/journal/sensors
 
 NCAA:
