@@ -35,10 +35,6 @@ EMS:
 "IEEE MetroInd":
   url: https://www.metroind40iot.org/
 
-"Sensors":
-  name: "MDPI Sensors"
-  url: https://www.mdpi.com/journal/sensors
-
 NCAA:
   name: "Neural Computing and Applications"
   url: https://link.springer.com/journal/521
@@ -46,3 +42,7 @@ NCAA:
 Neurocomputing:
   name: "Neurocomputing"
   url: https://www.sciencedirect.com/journal/neurocomputing
+
+"Sensors":
+  name: "MDPI Sensors"
+  url: https://www.mdpi.com/journal/sensors
