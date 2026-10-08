@@ -2,7 +2,7 @@
 ---
 
 @unpublished{silvestri2026weathersynth,
-  title  = {WeatherSynth: A Modular Framework for Multivariate Weather Generation, Model Selection, and Climate Conditioning},
+  title  = {WeatherSynth: A composable Python framework for synthetic weather generation and evaluation},
   author = {Silvestri, Romeo and Antonini, Mattia and Vecchio, Massimo and Antonelli, Fabio},
   year   = {2026},
   journal = {Environmental Modelling & Software},
@@ -10,6 +10,20 @@
   abbr       = {EMS},
   venue_type = {journal},
   pubstatus  = {in_preparation},
+  abstract  = {WeatherSynth is a Python framework for composing and evaluating synthetic weather-generation
+               pipelines with interchangeable generators, corrections, climate conditioners, physical
+               constraints and diagnostics. It is assessed across six Italian sites using five daily ERA5
+               variables. Fifty candidate pipelines per site are compared through five-fold blocked
+               cross-validation within 1985--2014, followed by historical reconstruction and independent
+               evaluation for 2015--2024. Successor-based nearest-neighbour resampling achieves the lowest
+               mean windowed energy distance at every site, although leading families have overlapping fold
+               scores. Historical reconstruction reproduces monthly means and seasonal cross-variable
+               dependence more closely than temporal persistence. Delta change and quantile-based conditioning
+               improve temperature means but do not consistently improve multivariate agreement. Across four
+               climate models, quantile-based conditioning transfers prescribed quantile changes more
+               accurately than delta change, without consistently improving agreement with 2015--2024
+               reanalysis. The framework supports extensible, reproducible comparisons of complete pipelines,
+               separating historical fidelity, prescribed signal transfer and independent-period agreement.},
   preview    = {weathersynth.png}
 }
 
@@ -22,7 +36,26 @@
   abbr       = {Neurocomputing},
   venue_type = {journal},
   pubstatus  = {submitted},
-  abstract   = {Regression models deployed in production are vulnerable to concept drift, which degrades performance over time and requires timely monitoring. We introduce the Wasserstein Drift Detector, a model-agnostic online detector that monitors a deployed regression model's squared residual stream. The detector compares an older reference window and a recent window within a sliding residual buffer using the empirical $1$-Wasserstein distance, and signals drift when this distance exceeds a robust threshold calibrated from a rolling interquartile-range estimate; a hysteresis mechanism reduces redundant alarms. We evaluate the detector against ADWIN, KSWIN, and Page-Hinkley on nine synthetic drift scenarios under a shared automatic calibration protocol, covering abrupt, gradual, local, and global input-target shifts plus two shape-only residual-distribution shifts preserving the first two moments. At the calibrated operating points, the detector achieves a detection rate of at least $0.92$ in every scenario, whereas each baseline fails, with a detection rate of $0.00$ in one scenario, while its flicker rate never exceeds $0.02$ redundant alarms per $1{,}000$ post-drift samples. Holm-corrected paired tests and a Friedman--Nemenyi ranking confirm these differences; an ablation study attributes alarm stability to the hysteresis mechanism and robust threshold; a sensitivity analysis identifies the threshold multiplier as the main hyperparameter-sensitivity source on local and shape-only drifts. Two real-world case studies complement the benchmark: on a Toulouse bike-sharing residual stream with repeatedly non-unimodal residuals, the detector raises one to two orders of magnitude fewer alarms than the baselines, and a preliminary soil-moisture forecasting probe shows the same pattern.},
+  abstract  = {Regression models deployed in production are vulnerable to concept drift, which degrades
+               performance over time and requires timely monitoring. We introduce the Wasserstein Drift
+               Detector, a model-agnostic online detector that monitors a deployed regression model's squared
+               residual stream. The detector compares an older reference window and a recent window within a
+               sliding residual buffer using the empirical $1$-Wasserstein distance, and signals drift when
+               this distance exceeds a robust threshold calibrated from a rolling interquartile-range
+               estimate; a hysteresis mechanism reduces redundant alarms. We evaluate the detector against
+               ADWIN, KSWIN, and Page-Hinkley on nine synthetic drift scenarios under a shared automatic
+               calibration protocol, covering abrupt, gradual, local, and global input-target shifts plus two
+               shape-only residual-distribution shifts preserving the first two moments. At the calibrated
+               operating points, the detector achieves a detection rate of at least $0.92$ in every scenario,
+               whereas each baseline fails, with a detection rate of $0.00$ in one scenario, while its flicker
+               rate never exceeds $0.02$ redundant alarms per $1{,}000$ post-drift samples. Holm-corrected
+               paired tests and a Friedman--Nemenyi ranking confirm these differences; an ablation study
+               attributes alarm stability to the hysteresis mechanism and robust threshold; a sensitivity
+               analysis identifies the threshold multiplier as the main hyperparameter-sensitivity source on
+               local and shape-only drifts. Two real-world case studies complement the benchmark: on a
+               Toulouse bike-sharing residual stream with repeatedly non-unimodal residuals, the detector
+               raises one to two orders of magnitude fewer alarms than the baselines, and a preliminary
+               soil-moisture forecasting probe shows the same pattern.},
   preview    = {wasserstein_concept_drift.png}
 }
 
@@ -36,30 +69,31 @@
   abbr      = {NCAA},
   venue_type = {journal},
   pubstatus = {accepted},
-  abstract  = {Systematic reviews and meta-analyses are essential for advancing scientific research,
-               but they are time-consuming, labor-intensive, and prone to human error during literature
-               selection and data extraction. This paper proposes a framework that integrates Large
-               Language Models (LLMs) and retrieval-augmented generation (RAG) into the PRISMA 2020
-               workflow to assist and standardize key review tasks. Our contribution is methodological rather
-               than algorithmic: we operationalize its stages as a single reproducible, auditable pipeline built
-               from established, openly available components, prioritizing transparency and re-execution over
-               customized elements. The framework uses structured query templates to ensure reproducible
-               bibliographic searches, an LLM-driven pipeline for title and abstract screening, and a RAG-based
-               full-text eligibility assessment. Both automated stages rely on structured prompt templates that
-               encode inclusion and exclusion criteria as machine-interpretable instructions. Beyond selecting
-               relevant papers, it extracts specific information from documents, such as application details or
-               datasets, and harmonizes it into a standardized metadata schema. To evaluate our proposal, we
-               performed an experimental validation using an existing systematic literature review on Human Action
-               Quality Assessment (AQA) as a reference. The framework achieved an extraction recall of 85.11\% for
-               domain-specific datasets and identified 25 additional data sources not reported in the original
-               review. The pipeline achieved an overall article detection rate of 71.28\%. This reduction was
-               primarily a consequence of the strict, dataset-oriented Boolean query adopted in the identification
-               phase, rather than failures in the automated LLM or RAG components. Supplementary analyses confirmed
-               near-deterministic behavior across repeated runs and successful transfer to a different LLM family at
-               negligible computational cost. These results suggest that the framework can effectively assist in
-               identifying relevant studies and extracting information while maintaining alignment with PRISMA 2020
-               guidelines. The proposed approach is structured to facilitate adaptation to other research areas by
-               declaring new query and prompt templates.},
+  abstract  = {Systematic reviews and meta-analyses are essential for advancing scientific research, but they
+               are time-consuming, labor-intensive, and prone to human error during literature selection and
+               data extraction. This paper proposes a framework that integrates Large Language Models (LLMs)
+               and retrieval-augmented generation (RAG) into the PRISMA 2020 workflow to assist and
+               standardize key review tasks. Our contribution is methodological rather than algorithmic: we
+               operationalize its stages as a single reproducible, auditable pipeline built from established,
+               openly available components, prioritizing transparency and re-execution over customized
+               elements. The framework uses structured query templates to ensure reproducible bibliographic
+               searches, an LLM-driven pipeline for title and abstract screening, and a RAG-based full-text
+               eligibility assessment. Both automated stages rely on structured prompt templates that encode
+               inclusion and exclusion criteria as machine-interpretable instructions. Beyond selecting
+               relevant papers, it extracts specific information from documents, such as application details
+               or datasets, and harmonizes it into a standardized metadata schema. To evaluate our proposal,
+               we performed an experimental validation using an existing systematic literature review on Human
+               Action Quality Assessment (AQA) as a reference. The framework achieved an extraction recall of
+               85.11\% for domain-specific datasets and identified 25 additional data sources not reported in
+               the original review. The pipeline achieved an overall article detection rate of 71.28\%. This
+               reduction was primarily a consequence of the strict, dataset-oriented Boolean query adopted in
+               the identification phase, rather than failures in the automated LLM or RAG components.
+               Supplementary analyses confirmed near-deterministic behavior across repeated runs and
+               successful transfer to a different LLM family at negligible computational cost. These results
+               suggest that the framework can effectively assist in identifying relevant studies and
+               extracting information while maintaining alignment with PRISMA 2020 guidelines. The proposed
+               approach is structured to facilitate adaptation to other research areas by declaring new query
+               and prompt templates.},
   pdf       = {A Retrieval-Augmented LLM Framework for PRISMA-Aligned Systematic Reviews.pdf},
   preview   = {prisma.png}
 }
@@ -77,15 +111,16 @@
   venue_type = {conference},
   pubstatus = {published},
   abstract  = {Irrigation management is a key challenge in modern agriculture due to water scarcity and
-               increasing climate variability. This work proposes a deep reinforcement learning (DRL) framework for
-               irrigation scheduling that addresses data scarcity by training the agent within a digital twin of crop–soil
-               dynamics. The environment combines a KNN-based weather generator that extends a 30-year historical
-               record into 1000 synthetic seasons, an XGBoost model for daily soil water tension estimation, and the
-               AquaCrop simulator for crop biomass modeling. A DRL agent is trained using Proximal Policy Optimization
-               to learn a weather-aware irrigation policy without predefined rules. The framework is evaluated on
-               vineyard field data from the Val d'Adige region (Trentino, Italy) over the 2023–2024 growing seasons.
-               Results show a 19\% reduction in seasonal water use and more than a twofold increase in the number of
-               days within the optimal soil tension range, while maintaining comparable crop productivity to observed
+               increasing climate variability. This work proposes a deep reinforcement learning (DRL)
+               framework for irrigation scheduling that addresses data scarcity by training the agent within a
+               digital twin of crop–soil dynamics. The environment combines a KNN-based weather generator that
+               extends a 30-year historical record into 1000 synthetic seasons, an XGBoost model for daily
+               soil water tension estimation, and the AquaCrop simulator for crop biomass modeling. A DRL
+               agent is trained using Proximal Policy Optimization to learn a weather-aware irrigation policy
+               without predefined rules. The framework is evaluated on vineyard field data from the Val
+               d'Adige region (Trentino, Italy) over the 2023–2024 growing seasons. Results show a 19\%
+               reduction in seasonal water use and more than a twofold increase in the number of days within
+               the optimal soil tension range, while maintaining comparable crop productivity to observed
                practices.},
   bibtex_show = {true},
   html      = {https://ieeexplore.ieee.org/document/11653152},
@@ -107,19 +142,18 @@
   abbr      = {Sensors},
   venue_type = {journal},
   pubstatus = {published},
-  abstract  = {Efficient water management is a critical challenge for modern agriculture, particularly
-               in the context of increasing climate variability and limited freshwater resources. This
-               study presents a comparative field-based evaluation of two fuzzy-logic-based irrigation
-               decision support systems for vineyard management: a Mamdani-type controller with
-               expert-defined rules and a Takagi–Sugeno system designed to enable automated learning
-               from ultra-local historical field data. Both systems integrate soil moisture sensing,
-               short-term forecasting, and weather predictions to provide optimized irrigation
-               recommendations. The evaluation combines counterfactual simulations with a
-               bootstrap-based statistical analysis to assess water use efficiency, soil moisture
-               control, and robustness to environmental variability. The comparison highlights distinct
-               strengths of the two approaches, revealing trade-offs between water conservation and
-               crop stress mitigation, and offering practical insights for the design and deployment
-               of intelligent irrigation management solutions.},
+  abstract  = {Efficient water management is a critical challenge for modern agriculture, particularly in the
+               context of increasing climate variability and limited freshwater resources. This study presents
+               a comparative field-based evaluation of two fuzzy-logic-based irrigation decision support
+               systems for vineyard management: a Mamdani-type controller with expert-defined rules and a
+               Takagi–Sugeno system designed to enable automated learning from ultra-local historical field
+               data. Both systems integrate soil moisture sensing, short-term forecasting, and weather
+               predictions to provide optimized irrigation recommendations. The evaluation combines
+               counterfactual simulations with a bootstrap-based statistical analysis to assess water use
+               efficiency, soil moisture control, and robustness to environmental variability. The comparison
+               highlights distinct strengths of the two approaches, revealing trade-offs between water
+               conservation and crop stress mitigation, and offering practical insights for the design and
+               deployment of intelligent irrigation management solutions.},
   bibtex_show = {true},
   html      = {https://www.mdpi.com/1424-8220/25/23/7188},
   pdf       = {Smart Irrigation with Fuzzy Decision Support Systems in Trentino Vineyards.pdf},
@@ -138,19 +172,18 @@
   abbr      = {IEEE CoDIT},
   venue_type = {conference},
   pubstatus = {published},
-  abstract  = {This paper presents the development and evaluation of a Fuzzy Decision Support System
-               for irrigation management to promote sustainable water use in precision agriculture.
-               A Mamdani-type fuzzy logic model was designed to optimize irrigation scheduling for
-               vineyards in the Val d'Adige region of Trentino, Italy. The system integrates expert
-               knowledge with real-time data from tensiometers and weather stations to generate
-               adaptive, site-specific recommendations. Bayesian optimization was used to fine-tune
-               the membership functions of fuzzy variables, enhancing system performance. Field
-               evaluations conducted in 2023 across multiple sectors assessed total water use, average
-               soil moisture, and days exceeding critical moisture thresholds. Results show that the
-               system reduced total water consumption by over 52\% compared to traditional methods
-               while maintaining soil moisture within optimal levels. These findings underscore the
-               potential of combining fuzzy logic and IoT-based sensing to support scalable, adaptive
-               irrigation strategies across various crops and regions.},
+  abstract  = {This paper presents the development and evaluation of a Fuzzy Decision Support System for
+               irrigation management to promote sustainable water use in precision agriculture. A Mamdani-type
+               fuzzy logic model was designed to optimize irrigation scheduling for vineyards in the Val
+               d'Adige region of Trentino, Italy. The system integrates expert knowledge with real-time data
+               from tensiometers and weather stations to generate adaptive, site-specific recommendations.
+               Bayesian optimization was used to fine-tune the membership functions of fuzzy variables,
+               enhancing system performance. Field evaluations conducted in 2023 across multiple sectors
+               assessed total water use, average soil moisture, and days exceeding critical moisture
+               thresholds. Results show that the system reduced total water consumption by over 52\% compared
+               to traditional methods while maintaining soil moisture within optimal levels. These findings
+               underscore the potential of combining fuzzy logic and IoT-based sensing to support scalable,
+               adaptive irrigation strategies across various crops and regions.},
   bibtex_show = {true},
   html      = {https://ieeexplore.ieee.org/document/11321831},
   pdf       = {A Fuzzy Decision Support System to Optimize Irrigation Practices in Trentino Region.pdf},
@@ -169,21 +202,20 @@
   abbr         = {IEEE MetroAgriFor},
   venue_type   = {conference},
   pubstatus    = {published},
-  abstract     = {This paper provides valuable insights into the application of spatial interpolation
-                  techniques in smart agriculture and highlights the potential for further improvements
-                  through the integration of advanced geostatistical models. Specifically, it evaluates
-                  and compares two spatial interpolation techniques, Inverse Distance Weighting and
-                  Ordinary Kriging, for estimating soil moisture in apple orchards located in the Val
-                  di Non region of Trentino, Italy. Data were gathered from 18 tensiometer sensors
-                  deployed across the apple orchards, providing continuous soil moisture measurements
-                  over a specified time frame in 2023. The accuracy of both interpolation methods was
-                  assessed using root mean square error as the primary evaluation metric, with various
-                  validation methods employed to ensure robustness. Additionally, statistical analyses
-                  were conducted to determine the significance of differences in performance between
-                  the methods. The results indicate that Inverse Distance Weighting, despite its
-                  computational efficiency, slightly outperforms Ordinary Kriging in terms of accuracy,
-                  with statistically significant lower error values, making it a preferable choice for
-                  real-time soil moisture mapping and precision irrigation management in the region.},
+  abstract  = {This paper provides valuable insights into the application of spatial interpolation techniques
+               in smart agriculture and highlights the potential for further improvements through the
+               integration of advanced geostatistical models. Specifically, it evaluates and compares two
+               spatial interpolation techniques, Inverse Distance Weighting and Ordinary Kriging, for
+               estimating soil moisture in apple orchards located in the Val di Non region of Trentino, Italy.
+               Data were gathered from 18 tensiometer sensors deployed across the apple orchards, providing
+               continuous soil moisture measurements over a specified time frame in 2023. The accuracy of both
+               interpolation methods was assessed using root mean square error as the primary evaluation
+               metric, with various validation methods employed to ensure robustness. Additionally,
+               statistical analyses were conducted to determine the significance of differences in performance
+               between the methods. The results indicate that Inverse Distance Weighting, despite its
+               computational efficiency, slightly outperforms Ordinary Kriging in terms of accuracy, with
+               statistically significant lower error values, making it a preferable choice for real-time soil
+               moisture mapping and precision irrigation management in the region.},
   bibtex_show  = {true},
   html         = {https://ieeexplore.ieee.org/document/10948750},
   pdf          = {Comparative Analysis of Soil Moisture Interpolation Techniques in Apple Orchards of Trentino Region.pdf},
