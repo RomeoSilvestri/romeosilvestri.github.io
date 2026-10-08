@@ -5,7 +5,7 @@
     "image": "",
     "email": "silveromeo98@gmail.com",
     "phone": "",
-    "summary": "Applied Machine Learning Engineer with 3+ years of work experience and a strong foundation in statistics and data science. Specializing in AI research, MLOps workflows, reinforcement learning and Generative AI, I design and deploy robust, scalable models. Author of peer-reviewed papers, eager to apply my technical expertise and research to deliver projects with real-world impact.",
+    "summary": "Machine Learning Engineer with 3+ years of professional and research experience, combining a strong foundation in statistics and data science with applied machine learning and AI research. Experienced in developing end-to-end ML systems across forecasting, reinforcement learning, and generative AI, from scientific experimentation and validation to MLOps and production deployment. Author of peer-reviewed publications, with a focus on translating research into robust, data-driven systems with real-world applications.",
     "location": {
       "address": "",
       "postalCode": "",
@@ -22,7 +22,16 @@
       "url": "https://www.fbk.eu/it/",
       "startDate": "2023-12-04",
       "summary": "FBK is a leading Italian research institute focused on science and technology innovation, with a strong emphasis on AI, data science, and their real-world applications across sectors including agriculture, health, and industry.",
-      "highlights": ["Optimized ML pipelines and provided APIs in a research and production environment using Python, FastAPI, GitLab, LangGraph, and MLflow, while collaborating closely with domain experts to address complex problems and streamline processes.", "Designed, tested, and deployed a Decision Support System (DSS) for irrigation, integrating heterogeneous data sources, including IoT sensors and weather data, reducing operational costs by around 50% across several companies.", "Developed a Deep Reinforcement Learning agent with PPO optimization, leveraging a digital twin environment using a surrogate and a physical model for simulation and policy training, with synthetic weather data generation via KNN bootstrap.", "Developed a multi-agent LLM-based chatbot for the European AI Factories project, leveraging pre-trained models and Retrieval-Augmented Generation (RAG) to support decision-making. The system provides real-time, data-driven advice on agriculture, integrating legal guidelines and best technical practices, with support for global and region-specific recommendation models.", "Built state-of-the-art time series forecasting models for sensor trends using ARIMA, XGBoost, and LSTM neural networks, achieving around 5% prediction error through advanced feature engineering, hyperparameter tuning, and rigorous validation."]
+      "highlights": [
+        "Designed, tested, and deployed a Decision Support System for water management, integrating heterogeneous data sources, including IoT sensors and weather data, reducing operational costs by around 50% across several companies.",
+        "Operationalized research prototypes through reproducible ML pipelines and APIs using Python, FastAPI, MLflow, and GitLab, supporting experimentation and production deployment in collaboration with domain experts.",
+        "Developed a PPO-based Deep Reinforcement Learning agent in a digital-twin environment combining surrogate and physics-based models for simulation and policy training.",
+        "Developed WeatherSynth, a modular Python library for composing and benchmarking reproducible synthetic weather-generation pipelines with interchangeable generators, climate conditioners, physical constraints, and diagnostics.",
+        "Developed a multi-agent LLM/RAG assistant using LangChain and LangGraph, integrating technical and regulatory knowledge for real-time agricultural decision support with global and region-specific recommendations.",
+        "Built and evaluated ARIMA, XGBoost, and LSTM models for sensor time-series forecasting, achieving low prediction error through feature engineering, hyperparameter tuning, and rigorous validation.",
+        "Developed and benchmarked a Wasserstein-based drift detector for online regression monitoring, comparing it with established methods and evaluating its applicability to sensor forecasting.",
+        "Evaluated IoT soil-sensor behavior and anomaly-detection methods in collaboration with industry and academic partners to assess sensor quality, reliability, and suitability for practical field use."
+      ]
     },
     {
       "name": "Youbidata",
@@ -32,7 +41,7 @@
       "startDate": "2023-10-01",
       "endDate": "2023-11-30",
       "summary": "Youbidata is a data-driven startup specializing in business intelligence and advanced analytics, helping companies make informed decisions through customized data solutions and strategic consulting.",
-      "highlights": ["Developed a centralized financial monitoring dashboard using PostgreSQL and Power BI to provide KPIs for a consulting client."]
+      "highlights": ["Developed a centralized financial monitoring dashboard using PostgreSQL and Power BI to consolidate, track, and visualize key financial KPIs, supporting reporting and decision-making for a consulting client."]
     },
     {
       "name": "Italian National Institute of Statistics (ISTAT)",
@@ -42,7 +51,8 @@
       "startDate": "2023-03-10",
       "endDate": "2023-08-31",
       "summary": "ISTAT is the official statistical agency of Italy, responsible for collecting, analyzing, and disseminating data to support government planning, public policy, and socio-economic research.",
-      "highlights": ["Analyzed national demographic data using Excel, R and SQL to uncover socio-economic trends and produce periodic reports.", "Evaluated the Austrian quality framework's suitability for the Italian Census, achieving statistically significant results."]
+      "highlights": ["Analyzed national demographic data using R and SQL to uncover socio-economic trends and produce periodic reports.",
+        "Evaluated the Austrian quality framework's suitability for the Italian Census, achieving statistically significant results."]
     },
     {
       "name": "Sapienza University of Rome",
